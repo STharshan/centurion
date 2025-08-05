@@ -8,5 +8,4 @@ export default defineConfig({
     react(),
     tailwindcss(),
   ],
-  base: '/centurion', // Adjust the base path if your app is hosted in a subdirectory
 })
