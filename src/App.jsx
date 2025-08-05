@@ -6,7 +6,6 @@ import Footer from "./components/Footer";
 import About from "./pages/About";
 import Service from "./pages/Service";
 import Contact from "./pages/Contact";
-import ScrollToTop from "../../doggrommingcourse/src/components/ScrollToTop";
 import Gallery from "./pages/Gallery";
 import MOT from "./pages/MOT";
 import Tyre from "./pages/Tyre";
@@ -20,6 +19,7 @@ import Battery from "./pages/Battery";
 import Clutch from "./pages/Clutch";
 import TimingBelt from "./pages/TimingBelt";
 import VehicleSafety from "./pages/VehicleSafety";
+import ScrollToTop from "./components/ScrollToTop";
 
 function App() {
   return (
