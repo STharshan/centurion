@@ -127,13 +127,19 @@ const FeaturedServices = () => {
           {services.map((service, index) => (
             <div
               key={index}
-              className="bg-white rounded-lg overflow-hidden shadow border border-gray-200 cursor-pointer transition transform hover:scale-105 hover:shadow-lg relative z-0 hover:z-10"
+              className={`${
+                index === services.length - 1
+                  ? 'lg:col-span-3 mx-auto'  // Center the last item
+                  : ''
+              } bg-white lg:w-92 rounded-lg overflow-hidden shadow border border-gray-200 cursor-pointer transition transform hover:scale-105 hover:shadow-lg relative z-0 hover:z-10`}
             >
-              <img
-                src={service.image}
-                alt={service.title}
-                className="w-full h-48 object-cover transition-transform duration-300"
-              />
+              <div className="relative">
+                <img
+                  src={service.image}
+                  alt={service.title}
+                  className="w-full h-48 object-cover transition-transform duration-300" // Ensure consistent width and height for all images
+                />
+              </div>
               <div className="p-5 text-left">
                 <h3 className="font-semibold text-lg flex items-center gap-2 ">
                   <span className="text-red-500 text-xl bg-red-200 rounded-full p-3">{service.icon}</span> {service.title}

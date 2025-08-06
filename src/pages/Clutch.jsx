@@ -3,7 +3,7 @@ import React from 'react';
 const Clutch = () => {
     return (
         <div className="container mx-auto px-4 py-8">
-            <section className="text-center mt-30">
+            <section className="text-center mt-45">
                 <h1 className="text-3xl font-bold text-red-600">Clutch Fitting</h1>
                 <div className="mt-6 flex justify-center">
                     <img

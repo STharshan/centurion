@@ -6,21 +6,21 @@ const WhyChooseUs = () => {
   const features = [
     {
       icon: <FiShield size={28} className="text-red-600" />,
-      title: 'Certified Mercedes Technicians',
+      title: 'Ongoing Technician Training',
       description:
-        'Our team consists of qualified professionals with extensive experience in automotive repair and maintenance.',
+        'Our team regularly attends specialist training courses, keeping up with the latest automotive technology to deliver high-quality service every time.',
     },
     {
       icon: <FiSettings size={28} className="text-red-600" />,
       title: 'Advanced Equipment',
       description:
-        'We use state-of-the-art diagnostic tools and equipment to ensure accurate and efficient servicing.',
+        'We use state-of-the-art diagnostic tools and equipment to ensure accurate and efficient servicing on nearly all makes and models.',
     },
     {
       icon: <FiClock size={28} className="text-red-600" />,
-      title: 'Quick Turnaround',
+      title: 'Family-Run with Honest Values',
       description:
-        'We strive to complete all repairs and services promptly without compromising on quality and attention to detail.',
+        'As a long-established family business, we pride ourselves on being fair, honest, and genuinely caring—earning the trust and loyalty of our customers year after year.',
     },
   ];
 

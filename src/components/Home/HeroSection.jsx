@@ -20,7 +20,7 @@ const HeroSection = () => {
       <div className="absolute inset-0 bg-black bg-opacity-60 z-10" />
 
       {/* Content */}
-      <div className="relative z-20 h-full flex flex-col justify-center px-6 md:px-25 mt-10">
+      <div className="relative z-20 h-full flex flex-col justify-center px-6 md:px-25 mt-20">
         <div className="max-w-3xl">
           <span className="bg-red-600 text-white text-xs font-semibold px-4 py-1 rounded-full inline-block mb-4">
             Professional Car Services in Centurion

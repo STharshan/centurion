@@ -2,7 +2,7 @@ import React from "react";
 
 const Findmore = () => {
     return (
-        <section className="w-full bg-white py-16 px-6 scroll-m-18" id="findmore">
+        <section className="w-full bg-white py-16 px-6 scroll-m-30" id="findmore">
             <div className="flex flex-col lg:flex-row items-center gap-10">
                 <div className="flex-1 mt-8 lg:mt-0">
                     <img className="w-full object-cover h-full rounded-lg" src="home.png" alt="Car illustration" />
@@ -10,7 +10,12 @@ const Findmore = () => {
                 <div className="flex-1 text-center lg:text-left lg:pr-16">
                     <h2 className="text-4xl font-bold mb-4">Keeping You On The Road</h2>
                     <p className="text-lg mb-6">
-                        At Centurion Fast Fit LLP, we believe that your vehicle deserves nothing less than the best. As a specialist independent auto care and fast fit centre located in the heart of Coventry, we take pride in offering a wide array of services tailored to meet the needs of car and light commercial vehicle owners in the Greater Coventry Area. Our vastly trained specialist technicians are dedicated to ensuring your vehicle performs optimally, keeping you and your loved ones safe on the road. 
+                        At Centurion Fast Fit LLP, we believe that your vehicle deserves nothing less than the best. 
+                        As a specialist independent auto care and fast fit centre located in the heart of Coventry, 
+                        we take pride in offering a wide array of services tailored to meet the needs of car and 
+                        light commercial vehicle owners in the Greater Coventry Area. Our vastly trained specialist technicians
+                        are dedicated to ensuring your vehicle performs optimally, keeping you and your loved ones safe on the road.
+                        Fast & Efficient Turnaround, State-of-The-Art Equipment, Honest & Transparent Service, Competitive Pricing. 
                     </p>
                    
                     <div className="flex justify-center lg:justify-start space-x-8">
