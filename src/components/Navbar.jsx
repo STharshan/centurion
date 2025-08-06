@@ -53,7 +53,7 @@ const Navbar = () => {
               <span className="mx-1">/</span>
             </div>
             <div className="flex items-center gap-2 flex-wrap">
-              <FiMail className='text-xl hidden lg:flex' />
+              <FiMail className='text-xl' />
               <span>centurionfastfit@gmail.com</span>
             </div>
           </div>
