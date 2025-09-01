@@ -13,7 +13,7 @@ const Brake = () => {
                     />
                 </div>
 
-                <div className="mt-6 bg-red-500 text-white p-4 rounded-lg">
+                <div className="mt-6 text-white p-4 rounded-lg">
                     <h2 className="text-xl font-semibold">
                         Brake discs (rotors) and pads are critical components of your car's braking system, responsible for slowing down and stopping the vehicle. Regularly inspecting and maintaining them is essential for your safety. Here's how to check your brake discs and pads and why they are important:
                     </h2>

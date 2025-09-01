@@ -13,14 +13,14 @@ const Clutch = () => {
                     />
                 </div>
 
-                <div className="mt-6 bg-red-500 text-white p-4 rounded-lg">
+                <div className="mt-6  text-white p-4 rounded-lg">
                     <h2 className="text-xl font-semibold">
                         A clutch allows the driver to engage and disengage the engine from the transmission. When you press the clutch pedal, the engine is disconnected from the transmission, which allows you to change gears or stop without stalling the engine. Releasing the clutch reconnects the engine to the transmission, allowing the car to move again
                     </h2>
-                    <div className="p-4 rounded-lg shadow-lg">
+                    <div className="p-4">
                         <p className='text-xl text-left mt-10 text-black font-semibold'>Signs of a Worn or Failing Clutch</p>
-                        <p className="mt-2 text-lg text-left ml-10">
-                            <ul className="list-disc text-gray-200">
+                        <p className="mt-2 text-lg text-left ml-10 ">
+                            <ul className="text-gray-200 bg-red-500 p-4 rounded-lg shadow-lg">
                                 <li>
                                     <strong className='text-black'>Slipping Clutch:</strong> If you notice that the engine revs up but the car doesn’t accelerate as expected (especially when going uphill or accelerating hard), this could indicate that the clutch is slipping. This happens when the friction material on the clutch disc is worn out.
                                 </li>
@@ -44,7 +44,7 @@ const Clutch = () => {
 
                         <p className='text-xl text-left mt-10 text-black font-semibold'>How to Maintain a Clutch</p>
                         <p className="mt-2 text-lg text-left ml-10">
-                            <ul className="list-disc text-gray-200">
+                            <ul className=" text-gray-200 bg-red-500 p-4 rounded-lg shadow-lg">
                                 <li>
                                     <strong className='text-black'>Avoid Riding the Clutch:</strong> “Riding the clutch” refers to resting your foot on the clutch pedal while driving, even when it’s not necessary. This puts constant pressure on the clutch and can lead to premature wear.
                                 </li>
