@@ -39,11 +39,11 @@ const Battery = () => {
                             <h3 className="text-xl font-semibold text-white">Rough Idling or Stalling</h3>
                             <p className="text-white">Could be due to dirty filters, spark plugs, or fuel issues.</p>
                         </div>
-                        <div className="bg-red-500 p-6 rounded-lg shadow-lg m">
+                    </div>
+                        <div className="bg-red-500 p-6 rounded-lg shadow-lg">
                             <h3 className="text-xl font-semibold text-white">Poor Fuel Economy</h3>
                             <p className="text-white">A sign that your engine might need a tune-up.</p>
                         </div>
-                    </div>
 
                 </div>
             </section>

@@ -27,7 +27,15 @@ const ContactSection = () => {
               </div>
               <div>
                 <h4 className="font-semibold">Visit Us</h4>
-                <p className="text-gray-700">9A Colledge Road, Holbrooks, Coventry CV6 4BH </p>
+                {/* Make Address Clickable - Link to Google Maps */}
+                <a
+                  href="https://www.google.com/maps?q=9A+Colledge+Road,+Holbrooks,+Coventry+CV6+4BH"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-gray-700 hover:text-red-600"
+                >
+                  9A Colledge Road, Holbrooks, Coventry CV6 4BH
+                </a>
               </div>
             </div>
 
@@ -37,7 +45,10 @@ const ContactSection = () => {
               </div>
               <div>
                 <h4 className="font-semibold">Call Us</h4>
-                <p className="text-gray-700">02476 638999</p>
+                {/* Make Phone Number Clickable - Call */}
+                <a href="tel:02476638999" className="text-gray-700 hover:text-red-600">
+                  02476 638999
+                </a>
               </div>
             </div>
 
@@ -47,7 +58,13 @@ const ContactSection = () => {
               </div>
               <div>
                 <h4 className="font-semibold">Email Us</h4>
-                <p className="text-gray-700">centurionfastfit@gmail.com</p>
+                {/* Make Email Address Clickable - Email */}
+                <a
+                  href="mailto:centurionfastfit@gmail.com"
+                  className="text-gray-700 hover:text-red-600"
+                >
+                  centurionfastfit@gmail.com
+                </a>
               </div>
             </div>
 

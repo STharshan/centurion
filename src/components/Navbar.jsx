@@ -48,13 +48,17 @@ const Navbar = () => {
         <div className="hidden md:flex items-center gap-4 text-sm font-medium text-black">
           <div className="flex items-center gap-2 flex-wrap">
             <div className="flex items-center gap-2 flex-wrap">
-              <FiPhone className='text-xl' />
-              <span>02476 638999</span>
+              <FiPhone className="text-xl" />
+              <a href="tel:+442476638999" className="hover:text-red-600">
+                <span>02476 638999</span>
+              </a>
               <span className="mx-1">/</span>
             </div>
             <div className="flex items-center gap-2 flex-wrap">
-              <FiMail className='text-xl' />
-              <span>centurionfastfit@gmail.com</span>
+              <FiMail className="text-xl" />
+              <a href="mailto:centurionfastfit@gmail.com" className="hover:text-red-600">
+                <span>centurionfastfit@gmail.com</span>
+              </a>
             </div>
           </div>
         </div>

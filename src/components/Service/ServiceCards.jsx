@@ -1,5 +1,5 @@
 import React from "react";
-import { FaCar, FaWrench, FaLock, FaTools, FaCog, FaExclamationTriangle, FaBatteryFull, FaWind, FaClipboardCheck } from 'react-icons/fa'; 
+import { FaCar, FaWrench, FaLock, FaTools, FaCog, FaExclamationTriangle, FaBatteryFull, FaWind, FaClipboardCheck } from 'react-icons/fa';
 import { FiArrowRight } from "react-icons/fi";
 import { GiFlatTire } from "react-icons/gi";
 import { Link } from "react-router-dom";  // Import Link from react-router-dom
@@ -41,7 +41,7 @@ const services = [
   {
     title: "Ghost Immobiliser Fitting",
     description:
-      "The Ghost Immobiliser System represents the next step forward in car security. Easy installation, undetectable by thieves, and impossible to start without your unique pin or app authorisation - it’s the ultimate protection against car theft.",
+      "The Ghost Immobiliser System represents the next step forward in car security. Easy installation, undetectable by thieves, and impossible to start without your unique pin or app authorisation - it's the ultimate protection against car theft.",
     image: "/ghost.jpg",
     icon: <FaLock />,
     route: "/service/ghost"
@@ -49,7 +49,7 @@ const services = [
   {
     title: "Shock Absorbers & Suspension",
     description:
-      "Get in touch with us for an instant quote on the right shock absorber for your vehicle’s make and model.",
+      "Get in touch with us for an instant quote on the right shock absorber for your vehicle's make and model.",
     image: "/shock.jpg",
     icon: <FaWrench />,
     route: "/service/shock"
@@ -121,18 +121,17 @@ const ServiceCards = () => {
           Our <span className="text-red-600">Comprehensive</span> Services
         </h2>
         <p className="text-gray-600 mb-10">
-          At Centurion Fast Fit LLP, our services are designed with your safety and convenience in mind. Here’s a closer look at what we offer:
+          At Centurion Fast Fit LLP, our services are designed with your safety and convenience in mind. Here's a closer look at what we offer:
         </p>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {services.map((service, index) => (
             <div
               key={index}
-              className={`${
-                index === services.length - 1
+              className={`${index === services.length - 1
                   ? 'lg:col-span-3 mx-auto'  // Center the last item
                   : ''
-              } bg-white lg:w-92 rounded-lg overflow-hidden shadow border border-gray-200 cursor-pointer transition transform hover:scale-105 hover:shadow-lg relative z-0 hover:z-10`}
+                } bg-white lg:w-92 rounded-lg overflow-hidden shadow border border-gray-200 cursor-pointer transition transform hover:scale-105 hover:shadow-lg relative z-0 hover:z-10 flex flex-col h-full`}
             >
               <div className="relative">
                 <img
@@ -141,16 +140,21 @@ const ServiceCards = () => {
                   className="w-full h-48 object-cover transition-transform duration-300" // Ensure consistent width and height for all images
                 />
               </div>
-              <div className="p-5 text-left">
-                <h3 className="font-semibold text-lg flex items-center gap-2 ">
-                  <span className="text-red-500 text-xl bg-red-200 rounded-full p-3">{service.icon}</span> {service.title}
+              <div className="p-5 text-left flex flex-col flex-grow">
+                <h3 className="font-semibold text-lg flex items-center gap-2">
+                  <span className="text-red-500 text-xl bg-red-200 rounded-full p-3">
+                    {service.icon}
+                  </span>
+                  {service.title}
                 </h3>
-                <p className="text-sm text-gray-700 mt-2">{service.description}</p>
-                <Link to={service.route}>
-                  <button className="mt-4 text-red-600 font-semibold text-sm cursor-pointer flex items-center gap-1">
-                    Read More <FiArrowRight className="text-lg" />
-                  </button>
-                </Link>
+                <p className="text-sm text-gray-700 mt-2 flex-grow">{service.description}</p>
+                <div className="flex justify-between items-center mt-4">
+                  <Link to={service.route}>
+                    <button className="text-red-600 font-semibold text-sm cursor-pointer flex items-center gap-1">
+                      Read More <FiArrowRight className="text-lg" />
+                    </button>
+                  </Link>
+                </div>
               </div>
             </div>
           ))}

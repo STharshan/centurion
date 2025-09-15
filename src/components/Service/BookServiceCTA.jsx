@@ -1,5 +1,6 @@
 import React from "react";
 import { FiArrowRight, FiPhone } from "react-icons/fi"; // Feather Phone icon
+import { Link } from "react-router-dom"; // Import Link from react-router-dom
 
 const BookServiceCTA = () => {
   return (
@@ -14,12 +15,19 @@ const BookServiceCTA = () => {
         </p>
 
         <div className="flex flex-col sm:flex-row justify-center items-center gap-4">
-          <button className="bg-white text-red-600 font-semibold px-5 py-3 rounded-md flex items-center gap-2 shadow hover:bg-gray-100 transition">
-            <FiPhone className="w-4 h-4" /> 02476 638999
-          </button>
-          <button className="border border-white text-white font-semibold px-5 py-3 rounded-md hover:bg-white hover:text-red-600 transition">
-            Contact Us <span className="ml-1"><FiArrowRight className="inline-block" /></span>
-          </button>
+          {/* Phone Button with Clickable Number */}
+          <a href="tel:02476638999">
+            <button className="bg-white text-red-600 font-semibold px-5 py-3 rounded-md flex items-center gap-2 shadow hover:bg-gray-100 transition">
+              <FiPhone className="w-4 h-4" /> 02476 638999
+            </button>
+          </a>
+
+          {/* Contact Us Button with Link to Contact Page */}
+          <Link to="/contact">
+            <button className="border border-white text-white font-semibold px-5 py-3 rounded-md hover:bg-white hover:text-red-600 transition">
+              Contact Us <span className="ml-1"><FiArrowRight className="inline-block" /></span>
+            </button>
+          </Link>
         </div>
       </div>
     </section>

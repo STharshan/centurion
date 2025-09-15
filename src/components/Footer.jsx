@@ -13,7 +13,10 @@ const Footer = () => {
           Book your appointment today and let our expert team take care of your vehicle maintenance and repair needs.
         </p>
         <div className="flex justify-center gap-4">
-          <button className="bg-red-600 hover:bg-red-700 cursor-pointer text-white font-semibold py-2 px-6 rounded">
+          <button
+            onClick={() => window.location.href = "tel:+442476638999"}
+            className="bg-red-600 hover:bg-red-700 cursor-pointer text-white font-semibold py-2 px-6 rounded"
+          >
             Work Number
           </button>
           <Link to="/contact">
@@ -33,9 +36,15 @@ const Footer = () => {
             Centurion Service Centre provides quality car service and repairs with experienced professionals using the latest technology.
           </p>
           <div className="flex gap-4 mt-4 text-white text-sm">
-            <a href="#" aria-label="Facebook"><FaFacebookF className="hover:text-red-600" /></a>
-            <a href="#" aria-label="Instagram"><FaInstagram className="hover:text-red-600" /></a>
-            <a href="#" aria-label="TikTok"><FaTiktok className="hover:text-red-600" /></a>
+            <a href="https://www.facebook.com/centurionfastfitcentre/?_rdr" aria-label="Facebook">
+              <FaFacebookF className="hover:text-blue-600" />
+            </a>
+            <a href="https://www.instagram.com/centurionfastfit?igsh=azhwMXk4amVhOXV0" aria-label="Instagram">
+              <FaInstagram className="hover:text-pink-600" />
+            </a>
+            <a href="https://www.tiktok.com/@centfastfit?_t=ZN-8zfM4P4jRzi&_r=1" aria-label="TikTok">
+              <FaTiktok className="hover:text-red-600" />
+            </a>
           </div>
         </div>
 
@@ -57,15 +66,34 @@ const Footer = () => {
           <ul className="text-gray-400 text-sm space-y-3">
             <li className="flex items-start gap-2">
               <FiMapPin className="text-red-500 mt-1" />
-              9A Colledge Road, Holbrooks, Coventry CV6 4BH
+              <a
+                href="https://www.google.com/maps?q=9A+Colledge+Road,+Holbrooks,+Coventry+CV6+4BH"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:text-red-500"
+              >
+                9A Colledge Road, Holbrooks, Coventry CV6 4BH
+              </a>
             </li>
             <li className="flex items-start gap-2">
               <FiPhone className="text-red-500 mt-1" />
-              02476 638999
+              <a
+                href="tel:02476638999" // WhatsApp link
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:text-red-500"
+              >
+                02476 638999
+              </a>
             </li>
             <li className="flex items-start gap-2">
               <FiMail className="text-red-500 mt-1" />
-              centurionfastfit@gmail.com
+              <a
+                href="mailto:centurionfastfit@gmail.com"
+                className="hover:text-red-500"
+              >
+                centurionfastfit@gmail.com
+              </a>
             </li>
           </ul>
         </div>
@@ -73,7 +101,15 @@ const Footer = () => {
 
       {/* Bottom Line */}
       <div className="border-t border-gray-800 text-center py-4 text-sm text-gray-500">
-        © 2025 Derby Garage. Partnered with <a href="https://www.ansely.co.uk" target="_blank" rel="noopener noreferrer" className="text-white font-semibold">Ansely</a>
+        © 2025 Derby Garage. Partnered with{" "}
+        <a
+          href="https://www.ansely.co.uk"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-white font-semibold hover:text-red-500 hover:underline"
+        >
+          Ansely
+        </a>
       </div>
     </footer>
   );
