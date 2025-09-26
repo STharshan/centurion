@@ -1,5 +1,8 @@
-import React from 'react';
+import React, { useEffect, useRef } from "react";
 import { FaStar } from 'react-icons/fa';
+import { FiArrowLeft, FiArrowRight } from 'react-icons/fi'; // Importing React icons for arrows
+import AOS from 'aos'; // Import AOS
+import 'aos/dist/aos.css'; // Import AOS CSS
 
 const testimonials = [
   {
@@ -70,6 +73,32 @@ const testimonials = [
 ];
 
 const Testimonials = () => {
+  const testimonialContainerRef = useRef(null); // Reference for the container
+
+  // Initialize AOS on component mount
+  useEffect(() => {
+    AOS.init({
+      duration: 1000,
+      once: false,
+      offset: 200,
+      easing: 'ease-in-out',
+    });
+  }, []);
+
+  // Function to scroll left
+  const scrollLeft = () => {
+    if (testimonialContainerRef.current) {
+      testimonialContainerRef.current.scrollBy({ left: -300, behavior: 'smooth' });
+    }
+  };
+
+  // Function to scroll right
+  const scrollRight = () => {
+    if (testimonialContainerRef.current) {
+      testimonialContainerRef.current.scrollBy({ left: 300, behavior: 'smooth' });
+    }
+  };
+
   return (
     <section className="bg-white py-16 px-4">
       <div className="max-w-7xl mx-auto text-center">
@@ -79,34 +108,59 @@ const Testimonials = () => {
         <div className="w-20 h-1 bg-red-600 mx-auto mb-10 rounded" />
 
         {/* Testimonials Scroll */}
-        <div className="overflow-hidden">
-          <div
-            className="flex space-x-6 animate-scroll"
-            style={{ animationDuration: `${testimonials.length * 4}s`, animationTimingFunction: 'linear' }}
+        <div className="relative">
+          {/* Left Arrow */}
+          <button
+            onClick={scrollLeft}
+            className="absolute left-0 top-1/2 transform -translate-y-1/2 bg-red-600 text-white p-3 rounded-full shadow-lg z-10 hover:bg-red-700"
           >
-            {testimonials.map((item, idx) => (
-              <div
-                key={idx}
-                className="min-w-[300px] px-6 py-4 border rounded-lg shadow-sm hover:shadow-md transition bg-white"
-              >
-                {/* Stars */}
-                <div className="flex text-yellow-400 ml-20 mb-5">
-                  {[...Array(5)].map((_, i) => (
-                    <FaStar key={i} size={18} />
-                  ))}
+            <FiArrowLeft className="hover:-translate-x-1/2 hover:transform duration-300" size={24} />
+          </button>
+
+          {/* Testimonial container */}
+          <div
+            className="overflow-hidden"
+            style={{ width: '100%' }}
+          >
+            <div
+              ref={testimonialContainerRef}
+              className="flex space-x-6 overflow-x-auto scrollbar-hidden" // Hides the scrollbar
+              style={{ scrollBehavior: 'smooth' }} // Ensures smooth scrolling without showing scrollbars
+            >
+              {testimonials.map((item, idx) => (
+                <div
+                  key={idx}
+                  className="min-w-[300px] px-6 py-4 border-2 border-gray-200 hover:shadow-red-500 rounded-lg shadow-sm hover:shadow-md transition bg-white overflow-x-hidden"
+                  data-aos="fade-up"
+                  data-aos-delay={`${idx * 100}`}
+                >
+                  {/* Stars */}
+                  <div className="flex text-yellow-400 ml-20 mb-5">
+                    {[...Array(5)].map((_, i) => (
+                      <FaStar key={i} size={18} />
+                    ))}
+                  </div>
+
+                  {/* Badge */}
+                  <span className="bg-red-100 text-red-600 text-xs font-semibold px-3 py-1 rounded-full inline-block mb-4">
+                    {item.service}
+                  </span>
+
+                  {/* Text */}
+                  <p className="text-sm text-gray-700 mb-4">{item.review}</p>
+                  <p className="font-semibold text-black">{item.name}</p>
                 </div>
-
-                {/* Badge */}
-                <span className="bg-red-100 text-red-600 text-xs font-semibold px-3 py-1 rounded-full inline-block mb-4">
-                  {item.service}
-                </span>
-
-                {/* Text */}
-                <p className="text-sm text-gray-700 mb-4">{item.review}</p>
-                <p className="font-semibold text-black">{item.name}</p>
-              </div>
-            ))}
+              ))}
+            </div>
           </div>
+
+          {/* Right Arrow */}
+          <button
+            onClick={scrollRight}
+            className="absolute right-0 top-1/2 transform -translate-y-1/2 bg-red-600 text-white p-3 rounded-full shadow-lg z-10 hover:bg-red-700"
+          >
+            <FiArrowRight className="hover:translate-x-1/2 hover:transform duration-300" size={24} />
+          </button>
         </div>
       </div>
     </section>

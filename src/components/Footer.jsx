@@ -36,13 +36,13 @@ const Footer = () => {
             Centurion Service Centre provides quality car service and repairs with experienced professionals using the latest technology.
           </p>
           <div className="flex gap-4 mt-4 text-white text-sm">
-            <a href="https://www.facebook.com/centurionfastfitcentre/?_rdr" aria-label="Facebook">
+            <a href="https://www.facebook.com/centurionfastfitcentre/?_rdr" target='_blank' aria-label="Facebook">
               <FaFacebookF className="hover:text-blue-600" />
             </a>
-            <a href="https://www.instagram.com/centurionfastfit?igsh=azhwMXk4amVhOXV0" aria-label="Instagram">
+            <a href="https://www.instagram.com/centurionfastfit?igsh=azhwMXk4amVhOXV0" target='_blank' aria-label="Instagram">
               <FaInstagram className="hover:text-pink-600" />
             </a>
-            <a href="https://www.tiktok.com/@centfastfit?_t=ZN-8zfM4P4jRzi&_r=1" aria-label="TikTok">
+            <a href="https://www.tiktok.com/@centfastfit?_t=ZN-8zfM4P4jRzi&_r=1" target='_blank' aria-label="TikTok">
               <FaTiktok className="hover:text-red-600" />
             </a>
           </div>
@@ -78,7 +78,7 @@ const Footer = () => {
             <li className="flex items-start gap-2">
               <FiPhone className="text-red-500 mt-1" />
               <a
-                href="tel:02476638999" // WhatsApp link
+                href="https://wa.me/+442476638999"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="hover:text-red-500"

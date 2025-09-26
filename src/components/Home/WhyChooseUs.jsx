@@ -1,6 +1,8 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { FiShield, FiSettings, FiClock, FiArrowRight } from 'react-icons/fi';
 import { Link } from 'react-router-dom';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const WhyChooseUs = () => {
   const features = [
@@ -24,6 +26,15 @@ const WhyChooseUs = () => {
     },
   ];
 
+  useEffect(() => {
+    AOS.init({
+      duration: 1000, // Duration of animation
+      once: false, // Trigger on both scroll up and down
+      offset: 200, // Offset for triggering the animation
+      easing: 'ease-in-out', // Easing for the animations
+    });
+  }, []);
+
   return (
     <section className="py-16 px-4 bg-white text-center">
       <p className="text-red-600 font-semibold text-sm uppercase">Our Services</p>
@@ -31,11 +42,13 @@ const WhyChooseUs = () => {
       <div className="w-20 h-1 bg-red-600 mx-auto mb-10 rounded" />
 
       {/* Feature Cards */}
-      <div className="grid md:grid-cols-3 gap-6 max-w-6xl mx-auto mb-12">
+      <div className="grid md:grid-cols-3 gap-6 max-w-6xl mx-auto mb-12 ">
         {features.map((item, index) => (
           <div
             key={index}
-            className="border rounded-lg p-6 hover:shadow-lg transition text-center"
+            className="border border-gray-200 hover:shadow-red-400 active:shadow-red-400 active:shadow-xl rounded-lg p-6 hover:shadow-xl transition text-center"
+            data-aos="fade-up" // AOS animation on scroll
+            data-aos-delay={`${index * 100}`} // Stagger the animations
           >
             <div className="bg-red-100 w-14 h-14 mx-auto rounded-full flex items-center justify-center mb-4">
               {item.icon}
@@ -47,10 +60,15 @@ const WhyChooseUs = () => {
       </div>
 
       {/* CTA Button */}
-      <button className="bg-red-600 text-white font-semibold px-6 py-3 rounded hover:bg-red-700 flex items-center gap-2 mx-auto">
-        <Link to="/services" className="flex items-center gap-2">
-          View All Services <FiArrowRight />
+      <button
+        className="bg-red-600 text-white font-semibold px-6 py-3 rounded flex items-center gap-2 mx-auto transition-all duration-300 group"
+        data-aos="fade-up" // AOS animation for button
+        data-aos-delay="300" // Delay for the button animation
+      >
+        <Link to="/services" className="flex items-center gap-2 group-hover:-translate-x-2 transition-all duration-300">
+          View All Services
         </Link>
+        <FiArrowRight className="transition-transform duration-300 group-hover:translate-x-2 ml-2" />
       </button>
     </section>
   );
