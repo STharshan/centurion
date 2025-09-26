@@ -14,7 +14,7 @@ const testimonials = [
   {
     service: 'Overall Service',
     review:
-      'Great customer service from the get go when I called to get my car booked in for its annual service. I was assured all parts were brought in from the dealer so therefore genuine and reliable. Very professional and a great price too - a genuine business NOT a money-grabbing.',
+      'Great customer service from the get go when I called to get my car booked in for its annual service. I was assured all parts were brought in from the dealer so therefore genuine and reliable. Very professional and a great price too.',
     name: 'Charlie S',
   },
   {
@@ -49,7 +49,7 @@ const testimonials = [
   {
     service: 'Overall Service',
     review:
-      'I used Centurion for the first time a couple of weeks ago on recommendation and was not disappointed! So impressed with the lovely, friendly, and very reasonably priced service that I received that I immediately used them again for my daughters MOT and service. Highly recommended.',
+      'I used Centurion for the first time a couple of weeks ago on recommendation So impressed with the lovely, friendly, and very reasonably priced service that I received that I immediately used them again for my daughters MOT and service. Highly recommended.',
     name: 'Anita Bassi',
   },
   {
