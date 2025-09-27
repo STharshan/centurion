@@ -20,8 +20,9 @@ const Footer = () => {
             Work Number
           </button>
           <Link to="/contact">
-            <button className="bg-red-600 cursor-pointer hover:bg-red-700 text-white font-semibold py-2 px-6 rounded flex items-center gap-2">
-              Book Now <FiArrowRight />
+            <button className="bg-red-600 cursor-pointer hover:bg-red-700 text-white font-semibold py-2 px-6 rounded flex items-center gap-2 group">
+              <span className="transition-transform duration-300 group-hover:-translate-x-2">Book Now</span>
+              <FiArrowRight className="transition-transform duration-300 group-hover:translate-x-2 ml-2" />
             </button>
           </Link>
         </div>
