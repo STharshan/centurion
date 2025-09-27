@@ -24,8 +24,11 @@ const BookServiceCTA = () => {
 
           {/* Contact Us Button with Link to Contact Page */}
           <Link to="/contact">
-            <button className="border border-white text-white font-semibold px-5 py-3 rounded-md hover:bg-white hover:text-red-600 transition">
-              Contact Us <span className="ml-1"><FiArrowRight className="inline-block" /></span>
+            <button className="border border-white text-white font-semibold px-5 py-3 rounded-md hover:bg-white flex items-center gap-2 group hover:text-red-600 transition-all duration-300 relative">
+              <span className="transition-transform duration-300 group-hover:-translate-x-2 group-active:-translate-x-2">
+              Contact Us
+              </span>
+                <FiArrowRight className="transition-transform duration-300 group-hover:translate-x-2 group-active:translate-x-2" />
             </button>
           </Link>
         </div>

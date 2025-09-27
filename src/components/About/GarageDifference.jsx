@@ -5,7 +5,7 @@ import { FaAward, FaWrench, FaClock, FaSmile } from "react-icons/fa";
 const GarageDifference = () => {
   return (
     <section className="py-5 px-4 sm:px-6 lg:px-10 bg-white">
-      <div className="text-center mb-12 bg-red-600 p-7 rounded-lg shadow-lg">
+      <div className="text-center mb-12 max-w-6xl mx-auto bg-red-600 p-7 rounded-lg shadow-lg">
         <p className="text-white font-semibold uppercase tracking-wide mb-2">Why Choose Us</p>
         <h2 className="text-3xl sm:text-4xl font-extrabold text-gray-900">
           Trusted & Approved

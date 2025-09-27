@@ -3,7 +3,7 @@ import React from "react";
 const AboutSection = () => {
   return (
     <section className="w-full bg-white py-16 px-6">
-      <div className="flex flex-col lg:flex-row items-center">
+      <div className="flex flex-col max-w-6xl mx-auto lg:flex-row items-center">
         <div className="flex-1 text-center lg:text-left lg:pr-16">
           <h2 className="text-4xl font-bold mb-4">We have been in vehicle repair trade since the 90’s.</h2>
           <p className="text-lg mb-6">
@@ -28,7 +28,7 @@ const AboutSection = () => {
           </div>
         </div>
         <div className="flex-1 mt-8 lg:mt-0">
-          <img className="w-full object-cover h-full" src="about.png" alt="Car illustration" />
+          <img className="w-full object-cover h-110 rounded-lg hover:shadow-lg hover:transform hover:scale-105 hover:z-10 transition-all duration-300" src="about.png" alt="Car illustration" />
         </div>
       </div>
     </section>

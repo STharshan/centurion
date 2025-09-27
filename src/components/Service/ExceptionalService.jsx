@@ -1,30 +1,33 @@
 import React from "react";
+import { FaShieldAlt } from "react-icons/fa"; // For the "Guaranteed Quality" icon
+import { IoMdTime } from "react-icons/io"; // For the "Efficient Service" icon
+import { AiOutlineTool } from "react-icons/ai"; // For the "Advanced Diagnostics" icon
 
 const features = [
   {
     title: "Guaranteed Quality",
     description:
       "We stand behind our work with satisfaction guarantees and use only quality parts for all repairs and replacements.",
-    icon: "🛡️",
+    icon: <FaShieldAlt size={30} />,
   },
   {
     title: "Efficient Service",
     description:
       "We understand the importance of your time and strive to complete all services promptly without compromising quality.",
-    icon: "⏱️",
+    icon: <IoMdTime size={30} />,
   },
   {
     title: "Advanced Diagnostics",
     description:
       "Our state-of-the-art diagnostic equipment helps us identify and resolve complex vehicle issues quickly and accurately.",
-    icon: "⚙️",
+    icon: <AiOutlineTool size={30} />,
   },
 ];
 
 const ExceptionalService = () => {
   return (
     <section className="py-16 px-4 bg-gray-100">
-      <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-10 items-center">
+      <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-10 items-center">
         {/* Left Content */}
         <div>
           <p className="text-red-600 font-semibold uppercase mb-2">Why Choose Us</p>
@@ -54,12 +57,15 @@ const ExceptionalService = () => {
 
         {/* Right Image with Red Block */}
         <div className="relative">
+          {/* Background element */}
           <div className="absolute bottom-0 right-0 w-32 h-32 rounded-lg z-0 hidden sm:block"></div>
-          <div className="relative z-10 rounded-lg overflow-hidden shadow-lg">
+
+          {/* Image with hover effect */}
+          <div className="relative z-10 rounded-lg overflow-hidden">
             <img
               src="/side.jpg"
               alt="Service Technician"
-              className="w-full h-auto object-cover rounded-lg"
+              className="w-full object-cover h-110 rounded-lg hover:shadow-lg hover:transform hover:scale-105 hover:z-10 transition-all duration-300"
             />
           </div>
         </div>

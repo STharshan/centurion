@@ -11,9 +11,9 @@ import {
 const ContactSection = () => {
   return (
     <section className="py-16 px-4 bg-white">
-      <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12">
+      <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12">
         {/* Left Column - Contact Info */}
-        <div>
+        <div className="border border-gray-300 shadow-xl p-6 rounded-xl">
           <h2 className="text-2xl font-bold mb-4">Get in Touch</h2>
           <p className="text-gray-700 mb-8">
             Feel free to contact us with any questions or to schedule an appointment.
@@ -84,7 +84,7 @@ const ContactSection = () => {
         </div>
 
         {/* Right Column - Contact Form */}
-        <div className="bg-white rounded-lg shadow border p-6">
+        <div className="bg-white rounded-lg shadow-xl border border-gray-300 p-6">
           <h3 className="text-xl font-semibold mb-6">Send Us a Message</h3>
 
           <form className="space-y-4">

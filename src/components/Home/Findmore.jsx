@@ -14,11 +14,11 @@ const Findmore = () => {
 
     return (
         <section className="w-full bg-white py-16 px-6 scroll-m-30" id="findmore">
-            <div className="flex flex-col lg:flex-row items-center gap-10">
+            <div className="flex flex-col max-w-6xl mx-auto lg:flex-row items-center gap-10">
                 <div className="flex-1 mt-8 lg:mt-0" data-aos="fade-right">
                     {/* Add data-aos for the image animation */}
                     <img
-                        className="w-full object-cover h-full rounded-lg hover:shadow-lg hover:transform hover:scale-105 hover:z-10 transition-all duration-300"
+                        className="w-full object-cover h-110 rounded-lg hover:shadow-lg hover:transform hover:scale-105 hover:z-10 transition-all duration-300"
                         src="home.png"
                         alt="Car illustration"
                     />

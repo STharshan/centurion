@@ -1,9 +1,10 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { FaCar, FaWrench, FaLock, FaTools, FaCog, FaExclamationTriangle, FaBatteryFull, FaWind, FaClipboardCheck } from 'react-icons/fa';
 import { FiArrowRight } from "react-icons/fi";
 import { GiFlatTire } from "react-icons/gi";
-import { Link } from "react-router-dom";  // Import Link from react-router-dom
-import Service from "../../pages/Service";
+import { Link } from "react-router-dom";
+import AOS from "aos";
+import "aos/dist/aos.css"; // Import AOS CSS
 
 const services = [
   {
@@ -112,7 +113,16 @@ const services = [
   },
 ];
 
-const ServiceCards = () => {
+const FeaturedServices = () => {
+  useEffect(() => {
+    AOS.init({
+      duration: 1000, // Duration of the animation
+      once: false, // Trigger on both scroll up and down
+      offset: 200, // Offset to trigger animation
+      easing: 'ease-in-out', // Easing for the animation
+    });
+  }, []);
+
   return (
     <section className="py-16 px-4 bg-white text-center">
       <div className="max-w-6xl mx-auto">
@@ -129,15 +139,17 @@ const ServiceCards = () => {
             <div
               key={index}
               className={`${index === services.length - 1
-                  ? 'lg:col-span-3 mx-auto'  // Center the last item
-                  : ''
-                } bg-white lg:w-92 rounded-lg overflow-hidden shadow border border-gray-200 cursor-pointer transition transform hover:scale-105 hover:shadow-lg relative z-0 hover:z-10 flex flex-col h-full`}
+                ? 'lg:col-span-3 mx-auto'  // Center the last item
+                : ''
+                } bg-white lg:w-92 rounded-lg overflow-hidden shadow border hover:shadow-red-400 active:shadow-red-400 active:shadow-xl border-gray-200 cursor-pointer transition transform hover:scale-105 hover:shadow-lg relative z-0 hover:z-10 flex flex-col h-full`}
+              data-aos="fade-up" // Apply AOS fade-up effect to each card
+              data-aos-delay={`${index * 100}`} // Delay staggered animations based on index
             >
               <div className="relative">
                 <img
                   src={service.image}
                   alt={service.title}
-                  className="w-full h-48 object-cover transition-transform duration-300" // Ensure consistent width and height for all images
+                  className="w-full h-48 object-cover transition-transform duration-300"
                 />
               </div>
               <div className="p-5 text-left flex flex-col flex-grow">
@@ -149,11 +161,20 @@ const ServiceCards = () => {
                 </h3>
                 <p className="text-sm text-gray-700 mt-2 flex-grow">{service.description}</p>
                 <div className="flex justify-between items-center mt-4">
-                  <Link to={service.route}>
+                  <button
+                    className="bg-red-600 text-white font-semibold px-4 py-1 rounded flex items-center gap-2 mx-auto transition-all duration-300 group"
+                    data-aos="fade-up" // AOS animation for button
+                  >
+                    <Link to={service.route} className="flex items-center gap-2 group-hover:-translate-x-2 transition-all duration-300">
+                      Read More
+                    </Link>
+                    <FiArrowRight className="transition-transform duration-300 group-hover:translate-x-2 ml-2" />
+                  </button>
+                  {/* <Link to={service.route}>
                     <button className="text-red-600 font-semibold text-sm cursor-pointer flex items-center gap-1">
-                      Read More <FiArrowRight className="text-lg" />
+                       <FiArrowRight className="text-lg" />
                     </button>
-                  </Link>
+                  </Link> */}
                 </div>
               </div>
             </div>
@@ -164,4 +185,4 @@ const ServiceCards = () => {
   );
 };
 
-export default ServiceCards;
+export default FeaturedServices;
