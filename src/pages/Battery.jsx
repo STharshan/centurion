@@ -1,6 +1,34 @@
 import React from 'react';
 
 const Battery = () => {
+
+
+    const brakeIssues = [
+
+        {
+            "title": "Dashboard Warning Lights",
+            "description": "Ignoring them could lead to serious engine damage."
+        },
+        {
+            "title": "Unusual Noises or Vibrations",
+            "description": "Could point to engine, brake, or suspension issues."
+        },
+        {
+            "title": "Smoke from the Exhaust",
+            "description": "Often caused by oil leaks or worn engine parts."
+        },
+        {
+            "title": "Rough Idling or Stalling",
+            "description": "Could be due to dirty filters, spark plugs, or fuel issues."
+        },
+        {
+            "title": "Poor Fuel Economy",
+            "description": "A sign that your engine might need a tune-up."
+        }
+    ]
+
+
+
     return (
         <div className="container mx-auto px-4 py-8">
             <section className="text-center mt-10">
@@ -20,30 +48,30 @@ const Battery = () => {
                     <p className="text-xl font-semibold mt-8">
                         A car battery provides the electrical energy needed to start the engine and powers various electronics when the engine isn’t running. Once the engine starts, the alternator takes over to recharge the battery and provide power to the electrical systems.
                     </p>
-                    
-                    {/* Common signs section */}
-                    <div className="mt-10 grid grid-cols-2 gap-4">
-                        <div className="bg-red-500 p-6 rounded-lg shadow-lg">
-                            <h3 className="text-xl font-semibold text-white">Dashboard Warning Lights</h3>
-                            <p className="text-white">Ignoring them could lead to serious engine damage.</p>
-                        </div>
-                        <div className="bg-red-500 p-6 rounded-lg shadow-lg">
-                            <h3 className="text-xl font-semibold text-white">Unusual Noises or Vibrations</h3>
-                            <p className="text-white">Could point to engine, brake, or suspension issues.</p>
-                        </div>
-                        <div className="bg-red-500 p-6 rounded-lg shadow-lg">
-                            <h3 className="text-xl font-semibold text-white">Smoke from the Exhaust</h3>
-                            <p className="text-white">Often caused by oil leaks or worn engine parts.</p>
-                        </div>
-                        <div className="bg-red-500 p-6 rounded-lg shadow-lg">
-                            <h3 className="text-xl font-semibold text-white">Rough Idling or Stalling</h3>
-                            <p className="text-white">Could be due to dirty filters, spark plugs, or fuel issues.</p>
+
+                    <div className="bg-gray-100 text-white p-4 rounded-lg mt-10">
+                        <div className="bg-gray-100 text-white p-6 rounded-lg">
+                            <h2 className="text-xl font-semibold text-black mb-8">
+                                Professional Inspection
+                            </h2>
+                            <div className="flex flex-wrap justify-center gap-6">
+                                {brakeIssues.map((issue, index) => (
+                                    <div
+                                        key={index}
+                                        className="border bg-red-600 shadow-sm rounded-2xl text-white 
+                     w-full sm:w-[calc(50%-12px)] lg:w-[calc(33.333%-16px)] max-w-md transition-all duration-300 ease-in-out 
+  hover:scale-105 hover:shadow-[0_0_25px_5px_rgba(220,38,38,0.7)]
+  active:scale-95 active:shadow-[0_0_30px_6px_rgba(220,38,38,0.9)]"
+                                    >
+                                        <div className="p-6">
+                                            <h3 className="text-xl font-semibold text-white mb-2">{issue.title}</h3>
+                                            <p className="text-white text-sm">{issue.description}</p>
+                                        </div>
+                                    </div>
+                                ))}
+                            </div>
                         </div>
                     </div>
-                        <div className="bg-red-500 p-6 rounded-lg shadow-lg">
-                            <h3 className="text-xl font-semibold text-white">Poor Fuel Economy</h3>
-                            <p className="text-white">A sign that your engine might need a tune-up.</p>
-                        </div>
 
                 </div>
             </section>

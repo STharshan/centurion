@@ -13,13 +13,14 @@ const OEM = () => {
                     />
                 </div>
 
-                <div className="mt-6 bg-red-500 text-white p-4 rounded-lg">
+                <div className="mt-6 bg-gray-100 text-white p-4 rounded-lg   hover:scale-105 hover:shadow-[0_0_25px_5px_rgba(220,38,38,0.7)]
+  active:scale-95 active:shadow-[0_0_30px_6px_rgba(220,38,38,0.9)]">
+                    <div className="p-4 rounded-lg bg-red-600 shadow-lg ">
                     <h2 className="text-xl font-semibold">
-                        Why should I use OEM Diagnostic Tools?  
+                        Why should I use OEM Diagnostic Tools?
                     </h2>
-                    <div className="p-4 rounded-lg shadow-lg">
                         <p className="mt-2 text-lg text-left ml-10">
-                           OEM diagnostic tools are specifically designed for each vehicle manufacturer, ensuring support for all of their existing and future vehicles, advanced features and functions, and providing accurate and reliable diagnosis. 
+                            OEM diagnostic tools are specifically designed for each vehicle manufacturer, ensuring support for all of their existing and future vehicles, advanced features and functions, and providing accurate and reliable diagnosis.
                         </p>
                     </div>
                 </div>

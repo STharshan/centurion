@@ -1,6 +1,61 @@
 import React from 'react';
 
 const Clutch = () => {
+
+    const brakeIssues = [
+        {
+            title: "Slipping Clutch",
+            description: "If you notice that the engine revs up but the car doesn’t accelerate as expected (especially when going uphill or accelerating hard), this could indicate that the clutch is slipping. This happens when the friction material on the clutch disc is worn out."
+        },
+        {
+            title: "Difficulty Shifting Gears",
+            description: "If you have trouble shifting gears smoothly or if the gear stick feels stiff, it could indicate a clutch problem. This could be caused by a worn clutch disc, misalignment, or hydraulic issues in the clutch system."
+        },
+        {
+            title: "Spongy or Stiff Clutch Pedal",
+            description: "A clutch pedal that feels too soft, spongy, or too stiff can indicate issues with the hydraulic system or the clutch linkage."
+        },
+        {
+            title: "Grinding Noise",
+            description: "Grinding sounds when changing gears might suggest that the clutch isn’t disengaging fully, causing the gears to grind. This could be due to a worn clutch disc or a misadjusted linkage."
+        },
+        {
+            title: "Burning Smell",
+            description: "A burning smell, especially after heavy use of the clutch (e.g., in traffic or on hills), could indicate that the clutch is overheating and the friction material is wearing out."
+        },
+        {
+            title: "Vibration or Shuddering",
+            description: "If the car shakes or shudders when releasing the clutch, it may indicate a problem with the clutch disc or pressure plate. This is often referred to as \"clutch judder.\""
+        }
+    ];
+
+    const clutchIssues = [
+        {
+            title: "Slipping Clutch",
+            description: "If you notice that the engine revs up but the car doesn’t accelerate as expected (especially when going uphill or accelerating hard), this could indicate that the clutch is slipping. This happens when the friction material on the clutch disc is worn out."
+        },
+        {
+            title: "Difficulty Shifting Gears",
+            description: "If you have trouble shifting gears smoothly or if the gear stick feels stiff, it could indicate a clutch problem. This could be caused by a worn clutch disc, misalignment, or hydraulic issues in the clutch system."
+        },
+        {
+            title: "Spongy or Stiff Clutch Pedal",
+            description: "A clutch pedal that feels too soft, spongy, or too stiff can indicate issues with the hydraulic system or the clutch linkage."
+        },
+        {
+            title: "Grinding Noise",
+            description: "Grinding sounds when changing gears might suggest that the clutch isn’t disengaging fully, causing the gears to grind. This could be due to a worn clutch disc or a misadjusted linkage."
+        },
+        {
+            title: "Burning Smell",
+            description: "A burning smell, especially after heavy use of the clutch (e.g., in traffic or on hills), could indicate that the clutch is overheating and the friction material is wearing out."
+        },
+        {
+            title: "Vibration or Shuddering",
+            description: "If the car shakes or shudders when releasing the clutch, it may indicate a problem with the clutch disc or pressure plate. This is often referred to as 'clutch judder.'"
+        }
+    ];
+
     return (
         <div className="container mx-auto px-4 py-8">
             <section className="text-center mt-45">
@@ -17,53 +72,55 @@ const Clutch = () => {
                     <h2 className="text-xl font-semibold">
                         A clutch allows the driver to engage and disengage the engine from the transmission. When you press the clutch pedal, the engine is disconnected from the transmission, which allows you to change gears or stop without stalling the engine. Releasing the clutch reconnects the engine to the transmission, allowing the car to move again
                     </h2>
-                    <div className="p-4">
-                        <p className='text-xl text-left mt-10 text-black font-semibold'>Signs of a Worn or Failing Clutch</p>
-                        <p className="mt-2 text-lg text-left ml-10 ">
-                            <ul className="text-gray-200 bg-red-500 p-4 rounded-lg shadow-lg">
-                                <li>
-                                    <strong className='text-black'>Slipping Clutch:</strong> If you notice that the engine revs up but the car doesn’t accelerate as expected (especially when going uphill or accelerating hard), this could indicate that the clutch is slipping. This happens when the friction material on the clutch disc is worn out.
-                                </li>
-                                <li>
-                                    <strong className='text-black'>Difficulty Shifting Gears:</strong> If you have trouble shifting gears smoothly or if the gear stick feels stiff, it could indicate a clutch problem. This could be caused by a worn clutch disc, misalignment, or hydraulic issues in the clutch system.
-                                </li>
-                                <li>
-                                    <strong className='text-black'>Spongy or Stiff Clutch Pedal:</strong> A clutch pedal that feels too soft, spongy, or too stiff can indicate issues with the hydraulic system or the clutch linkage.
-                                </li>
-                                <li>
-                                    <strong className='text-black'>Grinding Noise:</strong> Grinding sounds when changing gears might suggest that the clutch isn’t disengaging fully, causing the gears to grind. This could be due to a worn clutch disc or a misadjusted linkage.
-                                </li>
-                                <li>
-                                    <strong className='text-black'>Burning Smell:</strong> A burning smell, especially after heavy use of the clutch (e.g., in traffic or on hills), could indicate that the clutch is overheating and the friction material is wearing out.
-                                </li>
-                                <li>
-                                    <strong className='text-black'>Vibration or Shuddering:</strong> If the car shakes or shudders when releasing the clutch, it may indicate a problem with the clutch disc or pressure plate. This is often referred to as "clutch judder."
-                                </li>
-                            </ul>
-                        </p>
 
-                        <p className='text-xl text-left mt-10 text-black font-semibold'>How to Maintain a Clutch</p>
-                        <p className="mt-2 text-lg text-left ml-10">
-                            <ul className=" text-gray-200 bg-red-500 p-4 rounded-lg shadow-lg">
-                                <li>
-                                    <strong className='text-black'>Avoid Riding the Clutch:</strong> “Riding the clutch” refers to resting your foot on the clutch pedal while driving, even when it’s not necessary. This puts constant pressure on the clutch and can lead to premature wear.
-                                </li>
-                                <li>
-                                    <strong className='text-black'>Engage Neutral When Stopping:</strong> When stopping for a longer period (e.g., at a traffic light), it’s better to put the car in neutral and release the clutch pedal. Holding the clutch down can cause unnecessary wear on the release bearing and clutch components.
-                                </li>
-                                <li>
-                                    <strong className='text-black'>Smooth Engagement:</strong> When starting from a stop, avoid letting the clutch slip excessively. Gradually and smoothly engage the clutch to minimize wear.
-                                </li>
-                                <li>
-                                    <strong className='text-black'>Downshift Correctly:</strong> When downshifting, match the engine speed to the new gear (rev-matching) to reduce the strain on the clutch and transmission.
-                                </li>
-                                <li>
-                                    <strong className='text-black'>Avoid Overloading:</strong> Carrying heavy loads or towing can put extra strain on the clutch, leading to quicker wear and tear.
-                                </li>
-                            </ul>
-                        </p>
+                    <div className="bg-gray-100 text-white p-4 rounded-lg mt-10">
+                        <div className="bg-gray-100 text-white p-6 rounded-lg">
+                            <h2 className="text-xl font-semibold text-black mb-8">
+                                Signs of a Worn or Failing Clutch
+                            </h2>
+                            <div className="flex flex-wrap justify-center gap-6">
+                                {brakeIssues.map((issue, index) => (
+                                    <div
+                                        key={index}
+                                        className="border bg-red-600 shadow-sm rounded-2xl text-white 
+                     w-full sm:w-[calc(50%-12px)] lg:w-[calc(33.333%-16px)] max-w-md transition-all duration-300 ease-in-out 
+  hover:scale-105 hover:shadow-[0_0_25px_5px_rgba(220,38,38,0.7)]
+  active:scale-95 active:shadow-[0_0_30px_6px_rgba(220,38,38,0.9)]"
+                                    >
+                                        <div className="p-6">
+                                            <h3 className="text-xl font-semibold text-white mb-2">{issue.title}</h3>
+                                            <p className="text-white text-sm">{issue.description}</p>
+                                        </div>
+                                    </div>
+                                ))}
+                            </div>
+                        </div>
                     </div>
 
+
+                    <div className="bg-gray-100 text-white p-4 rounded-lg mt-10">
+                        <div className="bg-gray-100 text-white p-6 rounded-lg">
+                            <h2 className="text-xl font-semibold text-black mb-8">
+                                How to Maintain a Clutch
+                            </h2>
+                            <div className="flex flex-wrap justify-center gap-6">
+                                {clutchIssues.map((iss, index) => (
+                                    <div
+                                        key={index}
+                                        className="border bg-red-600 shadow-sm rounded-2xl text-white 
+                     w-full sm:w-[calc(50%-12px)] lg:w-[calc(33.333%-16px)] max-w-md transition-all duration-300 ease-in-out 
+  hover:scale-105 hover:shadow-[0_0_25px_5px_rgba(220,38,38,0.7)]
+  active:scale-95 active:shadow-[0_0_30px_6px_rgba(220,38,38,0.9)]"
+                                    >
+                                        <div className="p-6">
+                                            <h3 className="text-xl font-semibold text-white mb-2">{iss.title}</h3>
+                                            <p className="text-white text-sm">{iss.description}</p>
+                                        </div>
+                                    </div>
+                                ))}
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </section>
         </div>
