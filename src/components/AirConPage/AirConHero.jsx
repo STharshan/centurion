@@ -4,11 +4,11 @@ import { FaPhoneAlt } from "react-icons/fa";
 export default function AirConHero() {
   return (
     <section
-      className="py-16 transition-colors duration-300 bg-gradient-to-b 
+      className="transition-colors duration-300 bg-gradient-to-b 
                  from-[var(--aircon-grad-top)] to-[var(--aircon-grad-bottom)] 
                  dark:from-[var(--aircon-grad-top-dark)] dark:to-[var(--aircon-grad-bottom-dark)]"
     >
-      <div className="max-w-7xl mt-40 mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="max-w-7xl mt-40 mx-auto py-16 px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
           {/* Badge */}
           <span
