@@ -31,7 +31,7 @@ const Battery = () => {
 
     return (
         <div className="container mx-auto px-4 py-8">
-            <section className="text-center mt-10">
+            <section className="text-center mt-50">
                 <h1 className="text-3xl font-bold text-red-600">Car Batteries</h1>
                 <div className="mt-6 flex justify-center">
                     <img
@@ -41,13 +41,18 @@ const Battery = () => {
                     />
                 </div>
 
-                <div className="mt-6 text-black p-4 rounded-lg bg-white shadow-lg">
-                    <h2 className="text-xl font-semibold">
-                        Car batteries are essential for starting your vehicle and powering its electrical systems. A healthy battery ensures reliable engine starts, especially in extreme weather conditions, and powers components like lights, radio, and electronic systems when the engine is off. Here's a guide to understanding and maintaining your car battery:
-                    </h2>
-                    <p className="text-xl font-semibold mt-8">
-                        A car battery provides the electrical energy needed to start the engine and powers various electronics when the engine isn’t running. Once the engine starts, the alternator takes over to recharge the battery and provide power to the electrical systems.
-                    </p>
+                <div className="mt-6 text-black p-4 rounded-lg">
+
+                    <div className="mt-15 bg-gray-100 text-black shadow-lg p-8 rounded-lg transition-all duration-300 ease-in-out 
+  hover:scale-105 hover:shadow-[0_0_25px_5px_rgba(220,38,38,0.7)]
+  active:scale-95 active:shadow-[0_0_30px_6px_rgba(220,38,38,0.9)]">
+                        <h2 className="text-xl font-semibold">
+                            Car batteries are essential for starting your vehicle and powering its electrical systems. A healthy battery ensures reliable engine starts, especially in extreme weather conditions, and powers components like lights, radio, and electronic systems when the engine is off. Here's a guide to understanding and maintaining your car battery.
+                        </h2>
+                        <p className="text-xl font-semibold mt-8">
+                            A car battery provides the electrical energy needed to start the engine and powers various electronics when the engine isn’t running. Once the engine starts, the alternator takes over to recharge the battery and provide power to the electrical systems.
+                        </p>
+                    </div>
 
                     <div className="bg-gray-100 text-white p-4 rounded-lg mt-10">
                         <div className="bg-gray-100 text-white p-6 rounded-lg">

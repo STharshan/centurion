@@ -20,6 +20,7 @@ import Clutch from "./pages/Clutch";
 import TimingBelt from "./pages/TimingBelt";
 import VehicleSafety from "./pages/VehicleSafety";
 import ScrollToTop from "./components/ScrollToTop";
+import Aircon from "./pages/Airconpage";
 
 function App() {
   return (
@@ -43,6 +44,7 @@ function App() {
         <Route path="/service/battery" element={<Battery />} />
         <Route path="/service/clutch" element={<Clutch />} />
         <Route path="/service/timing-belt" element={<TimingBelt />} />
+        <Route path="/service/aircon" element={<Aircon />} />
         <Route path="/service/vehicle-safety" element={<VehicleSafety />} />
       </Routes>
       <Footer />

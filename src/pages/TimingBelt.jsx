@@ -14,17 +14,21 @@ const TimingBelt = () => {
                 </div>
 
                 <div className="mt-6 text-black p-4 rounded-lg">
-                    <h2 className="text-xl font-semibold">
-                        The timing belt (also called a cam belt) is an essential component of a car's engine that synchronizes the rotation of the crankshaft and camshaft(s). This ensures that the engine’s valves open and close at the correct times during the intake and exhaust strokes, relative to the position of the pistons.
-                    </h2>
-                    <p className="text-xl font-semibold mt-5">Here’s a detailed look at what a timing belt does, why it’s important, signs it may need replacement, and what happens if it fails: </p>
+                    <div className="mt-15 bg-gray-100 text-black shadow-lg p-8 rounded-lg transition-all duration-300 ease-in-out 
+  hover:scale-105 hover:shadow-[0_0_25px_5px_rgba(220,38,38,0.7)]
+  active:scale-95 active:shadow-[0_0_30px_6px_rgba(220,38,38,0.9)]">
+                        <h2 className="text-xl font-semibold">
+                            The timing belt (also called a cam belt) is an essential component of a car's engine that synchronizes the rotation of the crankshaft and camshaft(s). This ensures that the engine’s valves open and close at the correct times during the intake and exhaust strokes, relative to the position of the pistons.
+                        </h2>
+                        <p className="text-xl font-semibold mt-5">Here’s a detailed look at what a timing belt does, why it’s important, signs it may need replacement, and what happens if it fails: </p>
+                    </div>
                     <div className="p-4 text-black">
                         <div className='bg-red-500 mt-6 p-4 rounded-lg shadow-lg   hover:scale-105 hover:shadow-[0_0_25px_5px_rgba(220,38,38,0.7)]
   active:scale-95 active:shadow-[0_0_30px_6px_rgba(220,38,38,0.9)]'>
                             <p className='text-xl mt-5 text-black font-semibold text-center'>What the Timing Belt Does</p>
                             <p className="mt-2 text-lg mb-5 max-w-5xl  mx-auto">
                                 The timing belt connects the crankshaft to the camshaft, coordinating the movement of the engine's pistons and valves. The crankshaft drives the pistons, while the camshaft controls the opening and closing of the valves. The timing belt ensures these components move in perfect synchronization, preventing the pistons and valves from colliding.
-                
+
                                 In some engines, the timing belt also drives other components like the water pump or oil pump, which are crucial for engine cooling and lubrication.
                             </p>
                         </div>

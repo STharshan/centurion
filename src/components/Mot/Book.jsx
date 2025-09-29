@@ -2,7 +2,7 @@ import { FiCalendar, FiPhone } from "react-icons/fi";
 
 export default function ReadyToBook() {
     return (
-        <section className="py-10 bg-red-600 text-white mb-10">
+        <section className="py-15 bg-red-600 text-white">
             <div className="container mx-auto px-4 text-center">
                 <h2 className="text-3xl font-bold mb-4">Ready to Book?</h2>
                 <p className="text-xl mb-8 opacity-90">

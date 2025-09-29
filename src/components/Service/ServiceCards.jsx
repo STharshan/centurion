@@ -163,7 +163,6 @@ const FeaturedServices = () => {
                 <div className="flex justify-between items-center mt-4">
                   <button
                     className="bg-red-600 text-white font-semibold px-4 py-1 rounded flex items-center gap-2 mx-auto transition-all duration-300 group"
-                    data-aos="fade-up" // AOS animation for button
                   >
                     <Link to={service.route} className="flex items-center gap-2 group-hover:-translate-x-2 transition-all duration-300">
                       Read More

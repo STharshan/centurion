@@ -31,7 +31,7 @@ const Exhausts = () => {
 
     return (
         <div className="container mx-auto px-4 py-8">
-            <section className="text-center mt-12">
+            <section className="text-center mt-45">
                 <h1 className="text-3xl font-bold text-red-600">Exhausts</h1>
                 <div className="mt-6 flex justify-center">
                     <img
