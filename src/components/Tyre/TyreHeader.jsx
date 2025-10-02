@@ -1,47 +1,39 @@
-import React from 'react';
-import { Calendar } from 'lucide-react';
-import { useNavigate } from 'react-router-dom';
+import { FiCalendar, FiPhone } from "react-icons/fi";
+import { FaCarSide } from "react-icons/fa";
 
-export default function TyreHeader() {
+export default function TimingHeader() {
+    return (
+        <section className="py-10 ">
+            <div className="container mx-auto px-4 text-center mt-45">
 
-    const navigate = useNavigate();
+                {/* Heading */}
+                <h1 className="text-4xl md:text-6xl font-bold text-balance mb-6">
+                    Tyres & High-Tech Alignment
+                </h1>
 
-  const handleClick = () => {
-    // Navigate to another route if needed (e.g., to the contact page or home)
-    navigate("/contact");
+                {/* Subheading */}
+                <p className="text-xl text-muted-foreground text-balance max-w-3xl mx-auto mb-8">
+                    At Centurion, we combine premium tyre services with precision wheel alignment using the latest high-tech equipment—ensuring your vehicle performs safely, smoothly, and efficiently.
+                </p>
 
-    // Scroll to the section after navigation
-    const contactSection = document.getElementById("#contact");
-    if (contactSection) {
-      contactSection.scrollIntoView({ behavior: "smooth" });
-    }
-  };
+                {/* Buttons */}
+                <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                    <button className="inline-flex items-center justify-center bg-red-600 shadow-lg gap-2 whitespace-nowrap text-sm font-medium transition-all disabled:pointer-events-none disabled:opacity-50 h-10 rounded-md px-6 bg-primary hover:bg-primary/90 hover:bg-red-700 hover:shadow-lg  active:bg-red-800 duration-300 ease-in-out transform hover:scale-105 active:scale-95 ">
+                        <FiCalendar className="h-5 w-5 mr-2" />
+                        Book Your MOT or Service Today
+                    </button>
 
-  return (
-    <div className="w-full py-20 px-4 mt-20 text-center bg-red-600 text-white">
-      <h1 className="text-3xl sm:text-4xl font-bold mb-4 mt-20">Tyres & High-Tech Alignment</h1>
-      <p className="text-sm sm:text-lg max-w-3xl mx-auto leading-relaxed">
-        At Centurion, we combine premium tyre services with precision wheel alignment using the latest high-tech equipment—ensuring your vehicle performs safely, smoothly, and efficiently.
-      </p>
-       {/* Responsive Buttons */}
-      <div className="flex flex-col sm:flex-row gap-4 justify-center mt-10">
-        {/* Email Quote Button */}
-        <button
-          onClick={handleClick} // Scroll to Contact section on Home page
-          className="flex items-center justify-center gap-2 border border-white px-5 py-3 hover:text-red-600 rounded-md text-white hover:bg-white hover:shadow-lg  active:bg-red-800 duration-300 ease-in-out transform hover:scale-105 active:scale-95  transition w-full sm:w-auto"
-        >
-          <Calendar size={18} />
-          Book Consultation
-        </button>
+                    <button className="inline-flex items-center shadow-lg  justify-center gap-2 whitespace-nowrap text-sm font-medium transition-all disabled:pointer-events-none disabled:opacity-50 border border-gray-300 hover:bg-accent hover:text-accent-foreground dark:bg-input/30 dark:border-input dark:hover:bg-input/50 h-10 rounded-md px-6 hover:bg-red-700 hover:shadow-lg  active:bg-red-800 duration-300 ease-in-out transform hover:scale-105 active:scale-95">
+                        <FiPhone className="h-5 w-5 mr-2" />
+                        Call Us Today
+                    </button>
+                </div>
 
-        {/* Call Now Button */}
-        <a
-          href="tel: 02476 638999" // Corrected the phone number format for proper functionality
-          className="flex items-center justify-center gap-2 bg-white text-black font-medium px-5 py-3 rounded-md shadow-lg hover:shadow-lg  active:bg-red-800 duration-300 ease-in-out transform hover:scale-105 active:scale-95  hover:bg-gray-300 transition w-full sm:w-auto"
-        >
-          Schedule Your First Service
-        </a>
-      </div>
-    </div>
-  );
+                {/* Footer note */}
+                <p className="text-sm text-muted-foreground mt-4">
+                    Fast, Honest &amp; Hassle-Free
+                </p>
+            </div>
+        </section>
+    );
 }

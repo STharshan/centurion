@@ -161,15 +161,17 @@ const FeaturedServices = () => {
                 </h3>
                 <p className="text-sm text-gray-700 mt-2 flex-grow">{service.description}</p>
                 <div className="flex justify-between items-center mt-4">
+                  <Link to={service.route}>
                   <button
                     className="bg-red-600 text-white font-semibold px-4 py-1 rounded flex items-center gap-2 mx-auto transition-all duration-300 group"
                     
                   >
-                    <Link to={service.route} className="flex items-center gap-2 group-hover:-translate-x-2 transition-all duration-300">
+                    <p  className="flex items-center gap-2 group-hover:-translate-x-2 transition-all duration-300">
                       Read More
-                    </Link>
+                    </p>
                     <FiArrowRight className="transition-transform duration-300 group-hover:translate-x-2 ml-2" />
                   </button>
+                  </Link>
                   {/* <Link to={service.route}>
                     <button className="text-red-600 font-semibold text-sm cursor-pointer flex items-center gap-1">
                        <FiArrowRight className="text-lg" />

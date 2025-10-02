@@ -2,10 +2,9 @@ import React from 'react';
 
 const SmartAbout = () => {
     return (
-        <div className="container mx-auto px-4 py-8">
+        <div className="container mx-auto px-4 py-5">
             <section className="text-center">
-                <h1 className="text-3xl font-bold text-red-600">Smart Repairs</h1>
-                <div className="mt-6 flex justify-center gap-5">
+                <div className="flex justify-center gap-5">
                     <img
                         src="/smart1.jpg" // Replace with your image path
                         alt="Car Diagnostics"
