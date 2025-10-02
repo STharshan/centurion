@@ -9,7 +9,6 @@ import Contact from "./pages/Contact";
 import Gallery from "./pages/Gallery";
 import MOT from "./pages/MOT";
 import Tyre from "./pages/Tyre";
-import SmartRepair from "./pages/SmartRepair";
 import OEM from "./pages/OEM";
 import Ghost from "./pages/Ghost";
 import Shock from "./pages/Shock";
@@ -21,6 +20,7 @@ import TimingBelt from "./pages/TimingBelt";
 import VehicleSafety from "./pages/VehicleSafety";
 import ScrollToTop from "./components/ScrollToTop";
 import Aircon from "./pages/Airconpage";
+import SmartRepair from "./pages/SmartRepair";
 
 function App() {
   return (
