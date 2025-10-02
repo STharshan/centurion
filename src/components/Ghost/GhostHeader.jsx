@@ -4,7 +4,7 @@ import { FaCarSide } from "react-icons/fa";
 export default function GhostHero() {
     return (
         <section className="py-10 ">
-            <div className="container mx-auto px-4 text-center mt-35">
+            <div className="container mx-auto px-4 text-center mt-45">
                 {/* Badge */}
                 <span className="inline-flex items-center justify-center rounded-xl bg-red-200 border border-gray-200 shadow-lg px-2 py-1 text-xs font-medium w-fit whitespace-nowrap shrink-0 gap-1 mb-4 bg-accent/10 text-accent-foreground border-accent/20">
                     <FaCarSide className="w-3 h-3" />
