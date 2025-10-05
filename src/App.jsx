@@ -21,6 +21,9 @@ import VehicleSafety from "./pages/VehicleSafety";
 import ScrollToTop from "./components/ScrollToTop";
 import Aircon from "./pages/Airconpage";
 import SmartRepair from "./pages/SmartRepair";
+import TermsConditions from "./components/Term";
+import PrivacyPolicy from "./components/PrivacyPolicy";
+import GDPRConsent from "./components/GDPRBanner";
 
 function App() {
   return (
@@ -46,8 +49,11 @@ function App() {
         <Route path="/service/timing-belt" element={<TimingBelt />} />
         <Route path="/service/aircon" element={<Aircon />} />
         <Route path="/service/vehicle-safety" element={<VehicleSafety />} />
+        <Route path="/terms-conditions" element={<TermsConditions />} />
+        <Route path="/privacy-policy" element={<PrivacyPolicy />} />
       </Routes>
       <Footer />
+      <GDPRConsent />
     </Router>
   );
 }

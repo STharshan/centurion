@@ -14,7 +14,7 @@ const Footer = () => {
         </p>
         <div className="flex justify-center gap-4">
           <button
-            onClick={() => window.location.href = "tel:+442476638999"}
+            onClick={() => (window.location.href = 'tel:+442476638999')}
             className="bg-red-600 hover:bg-red-700 cursor-pointer text-white font-semibold py-2 px-6 rounded"
           >
             Work Number
@@ -37,13 +37,13 @@ const Footer = () => {
             Centurion Service Centre provides quality car service and repairs with experienced professionals using the latest technology.
           </p>
           <div className="flex gap-4 mt-4 text-white text-sm">
-            <a href="https://www.facebook.com/centurionfastfitcentre/?_rdr" target='_blank' aria-label="Facebook">
+            <a href="https://www.facebook.com/centurionfastfitcentre/?_rdr" target="_blank" aria-label="Facebook">
               <FaFacebookF className="hover:text-blue-600" />
             </a>
-            <a href="https://www.instagram.com/centurionfastfit?igsh=azhwMXk4amVhOXV0" target='_blank' aria-label="Instagram">
+            <a href="https://www.instagram.com/centurionfastfit?igsh=azhwMXk4amVhOXV0" target="_blank" aria-label="Instagram">
               <FaInstagram className="hover:text-pink-600" />
             </a>
-            <a href="https://www.tiktok.com/@centfastfit?_t=ZN-8zfM4P4jRzi&_r=1" target='_blank' aria-label="TikTok">
+            <a href="https://www.tiktok.com/@centfastfit?_t=ZN-8zfM4P4jRzi&_r=1" target="_blank" aria-label="TikTok">
               <FaTiktok className="hover:text-red-600" />
             </a>
           </div>
@@ -56,7 +56,7 @@ const Footer = () => {
             <li><Link to="/" className="hover:text-white">Home</Link></li>
             <li><Link to="/about" className="hover:text-white">About Us</Link></li>
             <li><Link to="/services" className="hover:text-white">Our Services</Link></li>
-            <li><Link to="/gallery" className='hover:text-white'>Gallery</Link></li>
+            <li><Link to="/gallery" className="hover:text-white">Gallery</Link></li>
             <li><Link to="/contact" className="hover:text-white">Contact Us</Link></li>
           </ul>
         </div>
@@ -89,10 +89,7 @@ const Footer = () => {
             </li>
             <li className="flex items-start gap-2">
               <FiMail className="text-red-500 mt-1" />
-              <a
-                href="mailto:centurionfastfit@gmail.com"
-                className="hover:text-red-500"
-              >
+              <a href="mailto:centurionfastfit@gmail.com" className="hover:text-red-500">
                 centurionfastfit@gmail.com
               </a>
             </li>
@@ -100,18 +97,38 @@ const Footer = () => {
         </div>
       </div>
 
-      {/* Bottom Line */}
-      <div className="border-t border-gray-800 text-center py-4 text-sm text-gray-500">
-        © 2025 Derby Garage. Partnered with{" "}
-        <a
-          href="https://www.ansely.co.uk"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="text-white font-semibold hover:text-red-500 hover:underline"
-        >
-          Ansely
-        </a>
+      {/* Bottom Line Section */}
+      {/* Bottom bar */}
+      <div className="mt-12 border-t  border-gray-300 dark:border-neutral-800 pt-8 pb-8">
+        <div className="flex flex-col max-w-6xl mx-10 md:flex-row items-center justify-between text-gray-200 dark:text-gray-400 text-sm">
+
+          {/* Right side */}
+          <div className="flex gap-4 mb-2 sm:mb-0 text-center">
+            <Link to="/privacy-policy" className="hover:text-gray-400">
+              Privacy Policy
+            </Link>
+            <Link to="/terms-conditions" className="hover:text-gray-400">
+              Terms & Conditions
+            </Link>
+          </div>
+
+          {/* Left side */}
+          <div className="text-center mb-4 md:mb-0">
+            © {new Date().getFullYear()} Centurion Fast Fit. All rights reserved.
+            <span className="mx-1">|</span>
+            Powered by{" "}
+            <a
+              href="https://www.ansely.co.uk/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="font-bold hover:underline text-white"
+            >
+              Ansely
+            </a>
+          </div>
+        </div>
       </div>
+
     </footer>
   );
 };

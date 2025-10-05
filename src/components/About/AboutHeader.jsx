@@ -4,7 +4,7 @@ import React from "react";
 const AboutHeader = () => {
   return (
     <section className="bg-black text-white py-16 px-4 text-center">
-      <div className="max-w-3xl mx-auto mt-40">
+      <div className="max-w-3xl mx-auto mt-45">
         <h2 className="text-3xl md:text-4xl font-bold mb-4">
           About Centurion Branding
         </h2>
