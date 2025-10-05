@@ -23,15 +23,18 @@ export default function ShockHeader() {
 
                 {/* Buttons */}
                 <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                    <a href="/Contact">
                     <button className="inline-flex items-center justify-center bg-red-600 shadow-lg gap-2 whitespace-nowrap text-sm font-medium transition-all disabled:pointer-events-none disabled:opacity-50 h-10 rounded-md px-6 bg-primary hover:bg-primary/90 hover:bg-red-700 hover:shadow-lg  active:bg-red-800 duration-300 ease-in-out transform hover:scale-105 active:scale-95 ">
                         <FiCalendar className="h-5 w-5 mr-2" />
                         Book Your MOT or Service Today
                     </button>
-
+                    </a>
+                    <a href="tel:02476 638999">
                     <button className="inline-flex items-center shadow-lg  justify-center gap-2 whitespace-nowrap text-sm font-medium transition-all disabled:pointer-events-none disabled:opacity-50 border border-gray-300 hover:bg-accent hover:text-accent-foreground dark:bg-input/30 dark:border-input dark:hover:bg-input/50 h-10 rounded-md px-6 hover:bg-red-700 hover:shadow-lg  active:bg-red-800 duration-300 ease-in-out transform hover:scale-105 active:scale-95">
                         <FiPhone className="h-5 w-5 mr-2" />
                         Call Us Today
                     </button>
+                    </a>
                 </div>
 
                 {/* Footer note */}
