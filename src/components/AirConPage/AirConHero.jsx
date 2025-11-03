@@ -4,7 +4,7 @@ import { FaPhoneAlt } from "react-icons/fa";
 export default function AirConHero() {
   return (
     <section
-      className="transition-colors duration-300 bg-gradient-to-b 
+      className="transition-colors duration-300 bg-linear-to-b 
                  from-[var(--aircon-grad-top)] to-[var(--aircon-grad-bottom)] 
                  dark:from-[var(--aircon-grad-top-dark)] dark:to-[var(--aircon-grad-bottom-dark)]"
     >

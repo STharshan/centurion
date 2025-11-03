@@ -90,7 +90,7 @@ export default function TyreEnd() {
       </div>
 
       {/* Tyre Brands */}
-      <div className="max-w-6xl mx-auto bg-gradient-to-r from-red-100 to-red-100 rounded-xl p-6 md:p-10 text-center">
+      <div className="max-w-6xl mx-auto bg-linear-to-r from-red-100 to-red-100 rounded-xl p-6 md:p-10 text-center">
         <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-8">
           Tyre Brand We Offer
         </h2>
