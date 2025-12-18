@@ -21,6 +21,7 @@ import VehicleSafety from "./pages/VehicleSafety";
 import ScrollToTop from "./components/ScrollToTop";
 import Aircon from "./pages/Airconpage";
 import SmartRepair from "./pages/SmartRepair";
+import ReviewPage from "./pages/Review";
 
 function App() {
   return (
@@ -31,6 +32,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/services" element={<Service />} />
+        <Route path="/review" element={<ReviewPage />} />
         <Route path="/gallery" element={<Gallery />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/service/mot" element={<MOT />} />
