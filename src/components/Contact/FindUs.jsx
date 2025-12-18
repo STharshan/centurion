@@ -12,7 +12,7 @@ const FindUs = () => {
         <div className="rounded-lg overflow-hidden shadow-lg w-full h-[400px] hover:shadow-red-500 active:shadow-red-500">
           <iframe
             title="Google Map - 9A Colledge Road"
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2436.5421122308474!2d-1.5235899!3d52.4294968!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48774be90e611ac3%3A0xa530e0456ad49de6!2s9A%20Colledge%20Rd%2C%20Coventry%20CV6%204BH%2C%20UK!5e0!3m2!1sen!2suk!4v1691518585147!5m2!1sen!2suk"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d304.0429827756073!2d-1.505897085692334!3d52.436685488902874!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48774b8a7adb4e49%3A0xd43986a25ce87e1a!2sCenturion%20Fast%20Fit!5e0!3m2!1sen!2slk!4v1766071146795!5m2!1sen!2slk" 
             width="100%"
             height="100%"
             allowFullScreen=""
