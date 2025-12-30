@@ -1,4 +1,5 @@
 import { FiShield, FiCheckCircle, FiTool } from "react-icons/fi";
+import { Link } from "react-router-dom";
 
 const servicesData = [
   {
@@ -71,9 +72,11 @@ export default function Services() {
 
                 {/* Button at bottom */}
                 <div className="px-6 mt-4">
-                  <button className="inline-flex items-center justify-center gap-2 hover:bg-red-700 hover:shadow-lg  active:bg-red-800 duration-300 ease-in-out transform hover:scale-105 active:scale-95 whitespace-nowrap rounded-md text-sm font-medium transition-all bg-red-600 text-primary-foreground shadow-xs hover:bg-primary/90 h-9 px-4 py-2 w-full">
+                  <Link 
+                    to="/contact"
+                    className="inline-flex items-center justify-center gap-2 hover:bg-red-700 hover:shadow-lg  active:bg-red-800 duration-300 ease-in-out transform hover:scale-105 active:scale-95 whitespace-nowrap rounded-md text-sm font-medium transition-all bg-red-600 text-primary-foreground shadow-xs hover:bg-primary/90 h-9 px-4 py-2 w-full">
                     {service.buttonText}
-                  </button>
+                  </Link>
                 </div>
               </div>
             );

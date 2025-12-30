@@ -1,10 +1,8 @@
-import React, { useEffect } from "react";
+import React from "react";
 import { FaCar, FaWrench, FaLock, FaTools, FaCog, FaExclamationTriangle, FaBatteryFull, FaWind, FaClipboardCheck } from 'react-icons/fa';
 import { FiArrowRight } from "react-icons/fi";
 import { GiFlatTire } from "react-icons/gi";
 import { Link } from "react-router-dom";
-import AOS from "aos";
-import "aos/dist/aos.css"; // Import AOS CSS
 
 const services = [
   {
@@ -114,14 +112,6 @@ const services = [
 ];
 
 const FeaturedServices = () => {
-  useEffect(() => {
-    AOS.init({
-      duration: 1000, // Duration of the animation
-      once: false, // Trigger on both scroll up and down
-      offset: 200, // Offset to trigger animation
-      easing: 'ease-in-out', // Easing for the animation
-    });
-  }, []);
 
   return (
     <section className="py-16 px-4 bg-white text-center">
@@ -149,6 +139,7 @@ const FeaturedServices = () => {
                 <img
                   src={service.image}
                   alt={service.title}
+                  loading="lazy"
                   className="w-full h-48 object-cover transition-transform duration-300"
                 />
               </div>

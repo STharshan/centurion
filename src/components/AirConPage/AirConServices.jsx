@@ -1,5 +1,3 @@
-"use client";
-
 import {
   FaSnowflake,
   FaThermometerHalf,
@@ -64,7 +62,6 @@ export default function AirConServices() {
   return (
     <section
       className="transition-colors duration-300"
-      style={{ backgroundColor: "var(--aircon-section-bg)" }}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Heading */}

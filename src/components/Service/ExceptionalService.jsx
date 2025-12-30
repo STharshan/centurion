@@ -64,6 +64,7 @@ const ExceptionalService = () => {
           <div className="relative z-10 rounded-lg overflow-hidden">
             <img
               src="/side.jpg"
+              loading="lazy"
               alt="Service Technician"
               className="w-full object-cover h-110 rounded-lg hover:shadow-lg hover:transform hover:scale-105 hover:z-10 transition-all duration-300"
             />

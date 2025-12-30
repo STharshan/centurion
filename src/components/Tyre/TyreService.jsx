@@ -74,18 +74,6 @@ export default function TyreServices() {
         Our Services
       </h2>
 
-      {/* Category Tags
-      <div className="flex flex-wrap justify-center gap-3 mb-10">
-        {categoryTags.map((tag, index) => (
-          <span
-            key={index}
-            className="px-4 py-1 text-sm font-medium rounded-full bg-red-100 text-red-600"
-          >
-            {tag}
-          </span>
-        ))}
-      </div> */}
-
       {/* Service Cards */}
       <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-6 mb-10">
         {serviceCards.map((card, index) => {

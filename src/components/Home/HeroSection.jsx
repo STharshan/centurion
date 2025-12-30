@@ -1,17 +1,7 @@
-import React, { useEffect } from 'react';
-import { FiPhoneCall, FiMessageCircle } from 'react-icons/fi';
-import AOS from 'aos'; // Import AOS
-import 'aos/dist/aos.css'; // Import AOS styles
+import React from 'react';
+import { FiPhoneCall } from 'react-icons/fi';
 
 const HeroSection = () => {
-  useEffect(() => {
-    AOS.init({
-      duration: 1000, // Animation duration in ms
-      once: false, // Allow animations to trigger on both scroll up and down
-      offset: 200, // Trigger animation when element is 200px from the viewport
-      easing: 'ease-in-out', // Choose animation easing function
-    });
-  }, []);
 
   return (
     <section className="relative h-[100vh] w-full overflow-hidden text-white">

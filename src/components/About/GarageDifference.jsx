@@ -1,6 +1,5 @@
 // components/GarageDifference.tsx
 import React from "react";
-import { FaAward, FaWrench, FaClock, FaSmile } from "react-icons/fa";
 
 const GarageDifference = () => {
   return (

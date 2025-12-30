@@ -1,5 +1,6 @@
 import { FiCalendar, FiPhone } from "react-icons/fi";
 import { FaCarSide } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 export default function ClutchHeader() {
     return (
@@ -18,20 +19,24 @@ export default function ClutchHeader() {
 
                 {/* Subheading */}
                 <p className="text-xl text-muted-foreground text-balance max-w-3xl mx-auto mb-8">
-                     Your clutch is one of the hardest-working components in your car, allowing you to engage and disengage the engine from the transmission. When it begins to wear out, you’ll notice issues with gear changes, performance, and even safety. Our expert technicians provide professional clutch fitting and replacement services to keep your car driving smoothly and reliably.
+                    Your clutch is one of the hardest-working components in your car, allowing you to engage and disengage the engine from the transmission. When it begins to wear out, you’ll notice issues with gear changes, performance, and even safety. Our expert technicians provide professional clutch fitting and replacement services to keep your car driving smoothly and reliably.
                 </p>
 
                 {/* Buttons */}
                 <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                    <button className="inline-flex items-center justify-center bg-red-600 shadow-lg gap-2 whitespace-nowrap text-sm font-medium transition-all disabled:pointer-events-none disabled:opacity-50 h-10 rounded-md px-6 bg-primary hover:bg-primary/90 hover:bg-red-700 hover:shadow-lg  active:bg-red-800 duration-300 ease-in-out transform hover:scale-105 active:scale-95 ">
+                    <Link
+                        to="/contact"
+                        className="inline-flex items-center justify-center bg-red-600 shadow-lg gap-2 whitespace-nowrap text-sm font-medium transition-all disabled:pointer-events-none disabled:opacity-50 h-10 rounded-md px-6 bg-primary hover:bg-primary/90 hover:bg-red-700 hover:shadow-lg  active:bg-red-800 duration-300 ease-in-out transform hover:scale-105 active:scale-95 ">
                         <FiCalendar className="h-5 w-5 mr-2" />
-                        Book Your MOT or Service Today
-                    </button>
+                        Book Your Service Today
+                    </Link>
 
-                    <button className="inline-flex items-center shadow-lg  justify-center gap-2 whitespace-nowrap text-sm font-medium transition-all disabled:pointer-events-none disabled:opacity-50 border border-gray-300 hover:bg-accent hover:text-accent-foreground dark:bg-input/30 dark:border-input dark:hover:bg-input/50 h-10 rounded-md px-6 hover:bg-red-700 hover:shadow-lg  active:bg-red-800 duration-300 ease-in-out transform hover:scale-105 active:scale-95">
+                    <a
+                        href="tel: +442476638999"
+                        className="inline-flex items-center shadow-lg  justify-center gap-2 whitespace-nowrap text-sm font-medium transition-all disabled:pointer-events-none disabled:opacity-50 border border-gray-300 hover:bg-accent hover:text-accent-foreground dark:bg-input/30 dark:border-input dark:hover:bg-input/50 h-10 rounded-md px-6 hover:bg-red-700 hover:shadow-lg  active:bg-red-800 duration-300 ease-in-out transform hover:scale-105 active:scale-95">
                         <FiPhone className="h-5 w-5 mr-2" />
                         Call Us Today
-                    </button>
+                    </a>
                 </div>
 
                 {/* Footer note */}

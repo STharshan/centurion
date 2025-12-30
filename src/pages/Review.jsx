@@ -90,12 +90,12 @@ export default function ReviewPage() {
     };
 
     return (
-        <div className="min-h-screen bg-gradient-to-br mt-20 from-amber-50 via-orange-50 to-rose-50 flex items-center justify-center p-4 sm:p-6 md:p-8">
+        <div className="min-h-screen bg-linear-to-br mt-20 from-amber-50 via-orange-50 to-rose-50 flex items-center justify-center p-4 sm:p-6 md:p-8">
             <div className="w-full mt-20 max-w-2xl">
                 {/* Main Card */}
                 <div className="bg-white rounded-3xl shadow-2xl shadow-orange-200/50 overflow-hidden backdrop-blur-sm">
                     {/* Header Section */}
-                    <div className="bg-gradient-to-r from-amber-500 via-orange-500 to-rose-500 px-6 sm:px-8 md:px-12 py-8">
+                    <div className="bg-linear-to-r from-amber-500 via-orange-500 to-rose-500 px-6 sm:px-8 md:px-12 py-8">
                         <div className="text-center">
                             <div className="inline-block mb-4">
                                 <div className="bg-white/20 backdrop-blur-md rounded-full p-4 shadow-lg">
@@ -165,7 +165,7 @@ export default function ReviewPage() {
                         {/* Review Box (for 1-3 stars) */}
                         {showReviewBox && !submitted && (
                             <div className="animate-slide-down">
-                                <div className="bg-gradient-to-br from-orange-50 to-amber-50 rounded-2xl p-6 sm:p-8 border-2 border-orange-200 shadow-lg">
+                                <div className="bg-linear-to-br from-orange-50 to-amber-50 rounded-2xl p-6 sm:p-8 border-2 border-orange-200 shadow-lg">
                                     <h2 className="text-xl sm:text-2xl font-bold text-gray-800 mb-4 flex items-center gap-2">
                                         <svg className="w-6 h-6 text-orange-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z" />
@@ -239,7 +239,7 @@ export default function ReviewPage() {
                                         <button
                                             type="submit"
                                             disabled={loading}
-                                            className={`w-full bg-gradient-to-r from-amber-500 via-orange-500 to-rose-500 text-white font-bold py-4 px-6 rounded-xl shadow-lg hover:shadow-xl transform hover:-translate-y-1 transition-all duration-200 text-base sm:text-lg focus:outline-none focus:ring-4 focus:ring-orange-300 ${loading ? 'opacity-70 cursor-not-allowed' : ''
+                                            className={`w-full bg-linear-to-r from-amber-500 via-orange-500 to-rose-500 text-white font-bold py-4 px-6 rounded-xl shadow-lg hover:shadow-xl transform hover:-translate-y-1 transition-all duration-200 text-base sm:text-lg focus:outline-none focus:ring-4 focus:ring-orange-300 ${loading ? 'opacity-70 cursor-not-allowed' : ''
                                                 }`}
                                         >
                                             {loading ? (

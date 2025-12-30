@@ -1,4 +1,4 @@
-import { FiShield, FiCheckCircle, FiTool } from "react-icons/fi";
+import { FiShield, FiCheckCircle } from "react-icons/fi";
 
 const servicesData = [
   {

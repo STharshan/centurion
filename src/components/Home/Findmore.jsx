@@ -1,16 +1,6 @@
-import React, { useEffect } from "react";
-import AOS from "aos";
-import "aos/dist/aos.css"; // Import AOS styles
+import React from "react";
 
 const Findmore = () => {
-    useEffect(() => {
-        AOS.init({
-            duration: 1000, // Duration of the animation
-            once: false, // Allow animations to trigger on both scroll up and down
-            offset: 200, // Trigger when the element is 200px from the viewport
-            easing: "ease-in-out", // Easing function for animation
-        });
-    }, []);
 
     return (
         <section className="w-full bg-white py-16 px-6 scroll-m-30" id="findmore">
@@ -20,6 +10,7 @@ const Findmore = () => {
                     <img
                         className="w-full object-cover h-110 rounded-lg hover:shadow-lg hover:transform hover:scale-105 hover:z-10 transition-all duration-300"
                         src="home.png"
+                        loading="lazy"
                         alt="Car illustration"
                     />
 

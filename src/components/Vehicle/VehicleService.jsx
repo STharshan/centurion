@@ -1,6 +1,4 @@
 import { FiShield, FiCheckCircle, FiTool } from "react-icons/fi";
-import { GrServices } from "react-icons/gr";
-import { MdOutlineAccessTime } from "react-icons/md";
 
 const servicesData = [
     {

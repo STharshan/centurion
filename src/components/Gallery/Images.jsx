@@ -18,6 +18,7 @@ const Images = () => {
             >
               <img
                 src={src}
+                loading="lazy"
                 alt={`Gallery image ${index + 1}`}
                 className="w-full h-auto object-cover"
               />

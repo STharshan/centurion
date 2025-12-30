@@ -58,10 +58,10 @@ const ContactSection = () => {
 
     try {
       await emailjs.sendForm(
-        "service_404lxe7",
-        "template_pddb2ji",
+        import.meta.env.VITE_EMAILJS_SERVICE_ID,
+        import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
         form,
-        "tmUgtXKf_TwGrV1iE"
+        import.meta.env.VITE_EMAILJS_PUBLIC_KEY
       );
 
       setStatus("Message sent successfully!");
@@ -110,8 +110,8 @@ const ContactSection = () => {
               </div>
               <div>
                 <h4 className="font-semibold">Call Us</h4>
-                <a href="tel:02476638999" className="text-gray-700 hover:text-red-600">
-                  02476 638999
+                <a href="tel:+442476638999" className="text-gray-700 hover:text-red-600">
+                  +442476 638999
                 </a>
               </div>
             </div>

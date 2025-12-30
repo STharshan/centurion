@@ -1,8 +1,6 @@
-import React, { useEffect, useRef } from "react";
+import React, { useRef } from "react";
 import { FaStar } from 'react-icons/fa';
 import { FiArrowLeft, FiArrowRight } from 'react-icons/fi';
-import AOS from 'aos';
-import 'aos/dist/aos.css';
 
 const testimonials = [
   {
@@ -74,15 +72,6 @@ const testimonials = [
 
 const Testimonials = () => {
   const testimonialContainerRef = useRef(null);
-
-  useEffect(() => {
-    AOS.init({
-      duration: 1000,
-      once: false,
-      offset: 200,
-      easing: 'ease-in-out',
-    });
-  }, []);
 
   const scrollLeft = () => {
     if (testimonialContainerRef.current) {

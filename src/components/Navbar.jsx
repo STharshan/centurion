@@ -51,7 +51,7 @@ const Navbar = () => {
             <div className="flex items-center gap-2 flex-wrap">
               <FiPhone className="text-xl" />
               <a href="tel:+442476638999" className="hover:text-red-600">
-                <span>02476 638999</span>
+                <span>+442476 638999</span>
               </a>
               <span className="mx-1">/</span>
             </div>

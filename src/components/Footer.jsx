@@ -13,12 +13,12 @@ const Footer = () => {
           Book your appointment today and let our expert team take care of your vehicle maintenance and repair needs.
         </p>
         <div className="flex justify-center gap-4">
-          <button
-            onClick={() => window.location.href = "tel:+442476638999"}
+          <a
+            href="tel:+442476638999"
             className="bg-red-600 hover:bg-red-700 cursor-pointer text-white font-semibold py-2 px-6 rounded"
           >
             Work Number
-          </button>
+          </a>
           <Link to="/contact">
             <button className="bg-red-600 cursor-pointer hover:bg-red-700 text-white font-semibold py-2 px-6 rounded flex items-center gap-2 group">
               <span className="transition-transform duration-300 group-hover:-translate-x-2">Book Now</span>
@@ -80,12 +80,12 @@ const Footer = () => {
             <li className="flex items-start gap-2">
               <FiPhone className="text-red-500 mt-1" />
               <a
-                href="https://wa.me/+442476638999"
+                href="tel: +442476 638999"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="hover:text-red-500"
               >
-                02476 638999
+                +442476 638999
               </a>
             </li>
             <li className="flex items-start gap-2">
@@ -102,16 +102,41 @@ const Footer = () => {
       </div>
 
       {/* Bottom Line */}
-      <div className="border-t border-gray-800 text-center py-4 text-sm text-gray-500">
-        © 2025 Derby Garage. Partnered with{" "}
-        <a
-          href="https://www.ansely.co.uk"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="text-white font-semibold hover:text-red-500 hover:underline"
-        >
-          Ansely
-        </a>
+      <div className="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
+        <p>&copy; 2025 Centurion Fast Fit. All rights reserved.</p>
+      </div>
+
+      {/* Bottom Bar */}
+      <div className="mt-2 flex flex-col pb-2 sm:flex-row justify-center items-center gap-3 text-center font-semibold text-gray-400">
+        {/* Left: Terms & Privacy */}
+        <div className="flex gap-4 text-sm">
+          <Link
+            to="/terms"
+            className="text-gray-400 hover:text-red-500 transition duration-300"
+          >
+            Terms & Conditions
+          </Link>
+          <span className="text-gray-500">|</span>
+          <Link
+            to="/privacy"
+            className="text-gray-400 hover:text-red-500 transition duration-300"
+          >
+            Privacy Policy
+          </Link>
+        </div>
+
+        {/* Center: Powered by Ansely (unchanged) */}
+        <p className="text-center font-semibold text-gray-400">
+          Powered by{" "}
+          <a
+            href="https://www.ansely.co.uk/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-red-500 hover:underline"
+          >
+            Ansely
+          </a>
+        </p>
       </div>
     </footer>
   );

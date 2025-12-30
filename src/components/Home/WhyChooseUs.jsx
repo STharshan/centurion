@@ -1,8 +1,6 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import { FiShield, FiSettings, FiClock, FiArrowRight } from 'react-icons/fi';
-import { Link } from 'react-router-dom';
-import AOS from 'aos';
-import 'aos/dist/aos.css';
+import { Link } from 'react-router-dom'
 
 const WhyChooseUs = () => {
   const features = [
@@ -25,15 +23,6 @@ const WhyChooseUs = () => {
         'As a long-established family business, we pride ourselves on being fair, honest, and genuinely caring—earning the trust and loyalty of our customers year after year.',
     },
   ];
-
-  useEffect(() => {
-    AOS.init({
-      duration: 1000, // Duration of animation
-      once: false, // Trigger on both scroll up and down
-      offset: 200, // Offset for triggering the animation
-      easing: 'ease-in-out', // Easing for the animations
-    });
-  }, []);
 
   return (
     <section className="py-16 px-4 bg-white text-center">

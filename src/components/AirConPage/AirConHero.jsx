@@ -1,5 +1,6 @@
 import React from "react";
 import { FaPhoneAlt } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 export default function AirConHero() {
   return (
@@ -39,23 +40,23 @@ export default function AirConHero() {
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center mt-8">
             {/* Call Button */}
-            <a href="tel: +442476 638999" className="inline-block">
+            <a href="tel: +442476638999" className="inline-block">
               <button
                 className="inline-flex items-center justify-center gap-2 h-10 rounded-md px-6 font-semibold transition-all bg-red-600 shadow-lg whitespace-nowrap text-sm disabled:pointer-events-none disabled:opacity-50 bg-primary hover:bg-primary/90 hover:bg-red-700 hover:shadow-lg  active:bg-red-800 duration-300 ease-in-out transform hover:scale-105 active:scale-95"
               >
                 <FaPhoneAlt className="h-5 w-5" />
-                Book Service: +442476 638999
+                Book Service: +442476638999
               </button>
             </a>
 
             {/* Get Quote Button */}
-            <a
-              href="/contact"
+            <Link
+              to="/contact"
               className="inline-flex items-center shadow-lg  justify-center gap-2 whitespace-nowrap text-sm font-medium transition-all disabled:pointer-events-none disabled:opacity-50 border border-gray-300 hover:bg-accent hover:text-accent-foreground dark:bg-input/30 dark:border-input dark:hover:bg-input/50 h-10 rounded-md px-6 hover:bg-red-700 hover:shadow-lg  active:bg-red-800 duration-300 ease-in-out transform hover:scale-105 active:scale-95"
 
             >
               Get Free Quote
-            </a>
+            </Link>
           </div>
         </div>
       </div>

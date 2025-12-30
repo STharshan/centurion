@@ -28,7 +28,7 @@ const AboutSection = () => {
           </div>
         </div>
         <div className="flex-1 mt-8 lg:mt-0">
-          <img className="w-full object-cover h-110 rounded-lg hover:shadow-lg hover:transform hover:scale-105 hover:z-10 transition-all duration-300" src="about.png" alt="Car illustration" />
+          <img loading="lazy" className="w-full object-cover h-110 rounded-lg hover:shadow-lg hover:transform hover:scale-105 hover:z-10 transition-all duration-300" src="about.png" alt="Car illustration" />
         </div>
       </div>
     </section>
