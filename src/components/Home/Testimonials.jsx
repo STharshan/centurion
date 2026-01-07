@@ -120,7 +120,7 @@ const Testimonials = () => {
               {testimonials.map((item, idx) => (
                 <div
                   key={idx}
-                  className="min-w-[260px] h-100 px-4 sm:px-6 py-4 sm:py-5 border-2 border-gray-200 hover:shadow-lg hover:shadow-red-500 rounded-lg shadow-lg  transition-all duration-300 bg-white"
+                  className="min-w-[260px] h-70 md:h-100 px-4 sm:px-6 py-4 sm:py-5 border-2 border-gray-200 hover:shadow-lg hover:shadow-red-500 rounded-lg shadow-lg  transition-all duration-300 bg-white"
                   data-aos="fade-up"
                   data-aos-delay={`${idx * 100}`}
                 >
