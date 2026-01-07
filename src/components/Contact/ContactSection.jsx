@@ -212,7 +212,7 @@ const ContactSection = () => {
               <p className="text-center text-sm text-green-600">{status}</p>
             )}
           </form>
-          <p className="text-center mt-3">By submitting this form, you agree to us processing your details to respond to your enquiry. Your information is handled securely and in line with our Privacy Policy.</p>
+          <p className="text-center mt-3 text-xs">By submitting this form, you agree to us processing your details to respond to your enquiry. Your information is handled securely and in line with our Privacy Policy.</p>
         </div>
 
       </div>
