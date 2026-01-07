@@ -94,12 +94,12 @@ const ContactSection = () => {
               <div>
                 <h4 className="font-semibold">Visit Us</h4>
                 <a
-                  href="https://www.google.com/maps?q=9A+Colledge+Road,+Holbrooks,+Coventry+CV6+4BH"
+                  href="https://maps.app.goo.gl/SoXFERKSRv4KtwrB9"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-gray-700 hover:text-red-600"
                 >
-                  9A Colledge Road, Holbrooks, Coventry CV6 4BH
+                  9a Colledge Rd., Coventry CV6 4BH, <br /> United Kingdom
                 </a>
               </div>
             </div>
@@ -137,10 +137,9 @@ const ContactSection = () => {
               </div>
               <div>
                 <h4 className="font-semibold">Opening Times</h4>
-                <p className="text-gray-700">Monday – Friday: 8:30 AM – 4:00 PM</p>
-                <p className="text-gray-700">Saturday: Closed</p>
+                <p className="text-gray-700">Monday – Friday: 8:30 AM – 5:30 PM</p>
+                <p className="text-gray-700">Saturday: 8:30 AM – 2:00 PM</p>
                 <p className="text-gray-700">Sunday: Closed</p>
-                <p className="text-gray-700">Bank Holidays: Closed</p>
               </div>
             </div>
           </div>

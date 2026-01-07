@@ -69,12 +69,12 @@ const Footer = () => {
             <li className="flex items-start gap-2">
               <FiMapPin className="text-red-500 mt-1" />
               <a
-                href="https://www.google.com/maps?q=9A+Colledge+Road,+Holbrooks,+Coventry+CV6+4BH"
+                href="https://maps.app.goo.gl/SoXFERKSRv4KtwrB9"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="hover:text-red-500"
               >
-                9A Colledge Road, Holbrooks, Coventry CV6 4BH
+                9a Colledge Rd., Coventry CV6 4BH, <br /> United Kingdom
               </a>
             </li>
             <li className="flex items-start gap-2">
