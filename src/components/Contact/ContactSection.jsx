@@ -1,5 +1,6 @@
 import React, { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
+import { CONTACT_DETAILS } from "../../constants/business"
 import {
   FiMapPin,
   FiPhone,
@@ -110,8 +111,8 @@ const ContactSection = () => {
               </div>
               <div>
                 <h4 className="font-semibold">Call Us</h4>
-                <a href="tel:+442476638999" className="text-gray-700 hover:text-red-600">
-                  +442476 638999
+                <a href={`tel:${CONTACT_DETAILS.phone}`}>
+                  {CONTACT_DETAILS.phone}
                 </a>
               </div>
             </div>
@@ -122,11 +123,8 @@ const ContactSection = () => {
               </div>
               <div>
                 <h4 className="font-semibold">Email Us</h4>
-                <a
-                  href="mailto:centurionfastfit@gmail.com"
-                  className="text-gray-700 hover:text-red-600"
-                >
-                  centurionfastfit@gmail.com
+                <a href={`mailto:${CONTACT_DETAILS.email}`}>
+                  {CONTACT_DETAILS.email}
                 </a>
               </div>
             </div>

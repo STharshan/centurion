@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { FiPhone, FiMenu, FiX, FiMail } from 'react-icons/fi';
 import { Link, useLocation } from 'react-router-dom';
+import { CONTACT_DETAILS } from "../constants/business";
 
 const Navbar = () => {
   const location = useLocation();
@@ -50,15 +51,15 @@ const Navbar = () => {
           <div className="flex items-center gap-2 flex-wrap">
             <div className="flex items-center gap-2 flex-wrap">
               <FiPhone className="text-xl" />
-              <a href="tel:+442476638999" className="hover:text-red-600">
-                <span>+442476 638999</span>
+              <a href={`tel:${CONTACT_DETAILS.phone}`}>
+                {CONTACT_DETAILS.phone}
               </a>
               <span className="mx-1">/</span>
             </div>
             <div className="flex items-center gap-2 flex-wrap">
               <FiMail className="text-xl" />
-              <a href="mailto:centurionfastfit@gmail.com" className="hover:text-red-600">
-                <span>centurionfastfit@gmail.com</span>
+              <a href={`mailto:${CONTACT_DETAILS.email}`}>
+                {CONTACT_DETAILS.email}
               </a>
             </div>
           </div>

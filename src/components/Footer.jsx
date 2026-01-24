@@ -2,6 +2,7 @@ import React from 'react';
 import { FiPhone, FiMail, FiMapPin, FiArrowRight } from 'react-icons/fi';
 import { FaFacebookF, FaInstagram, FaTiktok } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
+import { CONTACT_DETAILS } from "../constants/business"
 
 const Footer = () => {
   return (
@@ -79,22 +80,14 @@ const Footer = () => {
             </li>
             <li className="flex items-start gap-2">
               <FiPhone className="text-red-500 mt-1" />
-              <a
-                href="tel: +442476 638999"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="hover:text-red-500"
-              >
-                +442476 638999
+              <a href={`tel:${CONTACT_DETAILS.phone}`}>
+                {CONTACT_DETAILS.phone}
               </a>
             </li>
             <li className="flex items-start gap-2">
               <FiMail className="text-red-500 mt-1" />
-              <a
-                href="mailto:centurionfastfit@gmail.com"
-                className="hover:text-red-500"
-              >
-                centurionfastfit@gmail.com
+              <a href={`mailto:${CONTACT_DETAILS.email}`}>
+                {CONTACT_DETAILS.email}
               </a>
             </li>
           </ul>
