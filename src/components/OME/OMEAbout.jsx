@@ -9,6 +9,7 @@ const OEMAbout = () => {
                     <img
                         src="/oem1.jpg" // Replace with your image path
                         alt="Car Diagnostics"
+                        loading="lazy"
                         className="w-150 h-80 rounded-md"
                     />
                 </div>

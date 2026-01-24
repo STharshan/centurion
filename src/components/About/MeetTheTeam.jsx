@@ -51,6 +51,7 @@ const MeetTheTeam = () => {
             <img
               src={member.image}
               alt={member.name}
+              loading="lazy"
               className="w-full md:w-1/2 h-auto object-cover"
             />
             <div className="p-6 flex-1">

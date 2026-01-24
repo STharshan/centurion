@@ -47,6 +47,7 @@ const BrakeAbout = () => {
                     <img
                         src="/brake1.jpg" // Replace with your image path
                         alt="Ghost Immobiliser"
+                        loading="lazy"
                         className="w-150 h-80 rounded-md"
                     />
                 </div>

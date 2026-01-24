@@ -33,7 +33,7 @@ const Footer = () => {
       <div className="max-w-7xl mx-auto px-6 py-12 grid md:grid-cols-3 gap-10">
         {/* Left: Logo and Description */}
         <div>
-          <img src="/logo.png" alt="Derby Garage" className="h-20 mb-4" />
+          <img src="/logo.png" loading="lazy" alt="Derby Garage" className="h-20 mb-4" />
           <p className="text-gray-300 text-sm">
             Centurion Service Centre provides quality car service and repairs with experienced professionals using the latest technology.
           </p>
