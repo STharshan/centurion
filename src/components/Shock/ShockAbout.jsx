@@ -33,6 +33,7 @@ const ShockAbout = () => {
           <img
             src="/shock1.jpg" // Replace with your image path
             alt="Shock Absorber"
+            loading="lazy"
             className="w-full max-w-md h-64 object-cover rounded-md"
           />
         </div>

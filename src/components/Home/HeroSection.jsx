@@ -7,14 +7,15 @@ const HeroSection = () => {
     <section className="relative h-[100vh] w-full overflow-hidden text-white">
       {/* Background Video */}
       <video
+        className="absolute inset-0 w-full h-full object-cover"
+        src="/bg.mp4"
         autoPlay
         loop
         muted
         playsInline
-        className="absolute inset-0 w-full h-full object-cover z-0"
+        poster="/fall.png"
+        onError={(e) => (e.currentTarget.style.display = "none")}
       >
-        <source src="/bg.mp4" type="video/mp4" />
-        Your browser does not support the video tag.
       </video>
 
       {/* Overlay */}
@@ -61,18 +62,8 @@ const HeroSection = () => {
               Find out more
             </a>
           </div>
-
         </div>
       </div>
-
-      {/* Bottom Logo Animation */}
-      {/* <div className="absolute bottom-10 left-1/2 transform -translate-x-1/2 animate-bounce z-20">
-        <img
-          src="/scroll-down.svg"
-          alt="Scroll Down"
-          className="h-8 w-auto opacity-80"
-        />
-      </div> */}
     </section>
   );
 };

@@ -25,6 +25,7 @@ const ExhaustsAbout = () => {
                     <img
                         src="/exhaust.jpg" // Replace with your image path
                         alt="Exhaust System"
+                        loading="lazy"
                         className="w-150 h-80 rounded-md"
                     />
                 </div>

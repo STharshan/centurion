@@ -35,6 +35,7 @@ const BatteryAbout = () => {
                     <img
                         src="/battery.jpg" // Replace with your image path
                         alt="Car Diagnostics"
+                        loading="lazy"
                         className="w-full max-w-sm h-auto rounded-md"
                     />
                 </div>

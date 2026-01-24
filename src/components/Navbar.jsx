@@ -26,6 +26,7 @@ const Navbar = () => {
         {/* Logo */}
         <img
           src="/logo.png"
+          loading="lazy"
           alt="Derby Garage Ltd"
           className="h-20 w-auto"
         />
@@ -107,6 +108,7 @@ const Navbar = () => {
         <img
           src="/brand.png"  // Update with your image path
           alt="Bottom Image"
+          loading="lazy"
           className="w-full h-16"  // Adjust height as needed
         />
       </div>
