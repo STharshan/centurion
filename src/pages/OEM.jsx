@@ -1,13 +1,15 @@
 import React from 'react'
-import OMEHeader from '../components/OME/OMEHeader'
+
 import OEMAbout from '../components/OME/OMEAbout'
 import OMEServices from '../components/OME/OMEService'
 import OMECTA from '../components/OME/OMECTA'
-
+import ServiceHeader from "../Common/hero";
+import { serviceData } from "../Data/data";
 const OEM = () => {
   return (
     <div>
-      <OMEHeader />
+     
+      <ServiceHeader data={serviceData.oemDiagnostics} />
       <OEMAbout />
       <OMEServices />
       <OMECTA />

@@ -1,13 +1,15 @@
 import React from 'react'
-import ShockHeader from '../components/Shock/ShockHeader'
+
 import ShockAbout from '../components/Shock/ShockAbout'
 import ShockServices from '../components/Shock/ShockService'
 import ShockCTA from '../components/Shock/ShockBook'
-
+import ServiceHeader from "../Common/hero";
+import { serviceData } from "../Data/data";
 const Shock = () => {
   return (
     <div>
-      <ShockHeader />
+   
+       <ServiceHeader data={serviceData.shocksAndSuspension} />
       <ShockAbout />
       <ShockServices />
       <ShockCTA />
