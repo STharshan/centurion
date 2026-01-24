@@ -4,11 +4,13 @@ import Services from '../components/Mot/MotService'
 import CommonIssues from '../components/Mot/CommonIssue'
 import WhyChoose from '../components/Mot/WhyChoose'
 import ReadyToBook from '../components/Mot/Book'
-
+import ServiceHeader from "../Common/hero";
+import { serviceData } from "../Data/data";
 const MOT = () => {
   return (
     <div>
-      <HeroSection />
+      
+        <ServiceHeader data={serviceData.mot} />
       <Services />
       <CommonIssues />
       <WhyChoose />

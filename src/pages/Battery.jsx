@@ -1,13 +1,15 @@
 import React from 'react'
-import BatteryHeader from '../components/Battery/BatteryHero'
+
 import BatteryAbout from '../components/Battery/BatteryAbout'
 import BatteryServices from '../components/Battery/BatteryService'
 import BatteryCTA from '../components/Battery/BatteryBook'
-
+import ServiceHeader from "../Common/hero";
+import { serviceData } from "../Data/data";
 const Battery = () => {
   return (
     <div>
-      <BatteryHeader />
+     
+      <ServiceHeader data={serviceData.battery} />
       <BatteryAbout />
       <BatteryServices />
       <BatteryCTA />

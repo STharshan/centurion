@@ -1,13 +1,15 @@
 import React from 'react'
-import TimingHeader from '../components/Timing/TimingHero'
+
 import TimingBeltAbout from '../components/Timing/TimingAbout'
 import TimingServices from '../components/Timing/TimingService'
 import TimingCTA from '../components/Timing/TimingCTA'
-
+import ServiceHeader from "../Common/hero";
+import { serviceData } from "../Data/data";
 const TimingBelt = () => {
   return (
     <div>
-      <TimingHeader />
+      
+        <ServiceHeader data={serviceData.timingBelt} />
       <TimingBeltAbout />
       <TimingServices />
       <TimingCTA />

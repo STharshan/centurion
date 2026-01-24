@@ -1,13 +1,15 @@
 import React from 'react'
-import VehicleHeader from '../components/Vehicle/VehicleHero'
+
 import VehicleSafetyAbout from '../components/Vehicle/VehicleAbout'
 import VehicleCTA from '../components/Vehicle/VehicleBook'
 import VehicleServices from '../components/Vehicle/VehicleService'
-
+import ServiceHeader from "../Common/hero";
+import { serviceData } from "../Data/data";
 const VehicleSafety = () => {
   return (
     <div>
-      <VehicleHeader />
+     
+      <ServiceHeader data={serviceData.safetyAssessment} />
       <VehicleSafetyAbout />
       <VehicleServices />
       <VehicleCTA />
